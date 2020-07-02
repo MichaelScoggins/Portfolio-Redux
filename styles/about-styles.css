@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+body{
+  background-image: url(https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+nav{
+  height: 100%;
+  margin-left: 8rem;
+}
+
+nav ul{
+  width: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  list-style: none;
+  perspective: 640px;
+}
+
+ul:hover li:not(:hover){
+  opacity: 0.6;
+}
+
+nav ul li{
+  transform: rotatey(30deg) scalex(1.25);
+  transform-origin: left;
+  transition: .3s;
+}
+
+nav ul li:hover{
+  transform: rotatey(5deg);
+}
+
+nav ul li a{
+  font-size: 8rem;
+  line-height: 1;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222;
+  opacity: .6;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+  opacity: 1;
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/contact-me-styles.css">
+    <script src="/scripts/scripts.js"></script>
+    <title>Contact Me!</title>
+</head>
+<body>
+    <header class="header-container">   
+        <div class="contactlogo">
+            CONTACT ME
+            </div>      
+        <nav class="navbar">
+            <a class="navlink home-link" href="/index.html">HOME <span style="color:black"> |</span></a>
+            <a class="navlink resume-link" href="/Resume/">RESUME <span style="color:black"> |</span></a>
+            <a class="navlink about-link" href="aboutpage.html">ABOUT ME <span style="color:black"> |</span></a>
+            <a class="navlink blog-link" href="https://medium.com/me/stories/public">MY BLOGS <span style="color:black"> |</span></a>
+            <a class="navlink contact-link"><span style="color:orange">CONTACT ME |</span></a>
+            <a class="navlink inspiration-link" href="/pages/img-gal.html">INSPIRATION</a>            
+        </nav>
+        <img class="logo" src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" alt="austin coding academy logo">
+    </header>
+    <div id="contact-header">
+            <h2>Michael Scoggins<br>Student of Web Development</h2>
+    </div>
+    <main class="main-container">        
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <div class="blocklabel">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" >
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" min="1" max="200" step="5">
+                </div>
+                <div>
+                    <label for="date">Birthdate</label>
+                    <input type="date" name="date" id="date" min="2019-06-10">
+                </div>  
+            </div>        
+            <div class="gender">
+              <br>Gender
+              <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+              </div>
+              <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+              </div>
+              <div class="bwish">
+                <br>Would you like us to send you a Happy Birthday wish?
+                <div>
+                  <label for="male">Yes</label>
+                  <input type="radio" name="bwish" id="yes" value="yes">
+                </div>
+                <div>
+                  <label for="female">No</label>
+                  <input type="radio" name="gender" id="no" value="no">
+                </div>
+            </div>
+            <div class="howdid">
+                <br>How did you hear about us?<br>
+                <input type="checkbox" id="classmate" name="classmate" value="classmate">
+                <label for="classmate">From a Classmate</label><br>
+                <input type="checkbox" id="resume-submission" name="resume-submission" value="resume">
+                <label for="resume-submission">Resume Submission</label><br>
+                <input type="checkbox" id="LinkedIn" name="linkedin" value="linkedin">
+                <label for="linkedin">LinkedIn</label><br>        
+                <input type="checkbox" id="Coding Academy Rec" name="recommendation" value="recommendation">
+                <label for="coding academy rec">Coding Academy Recommendation</label><br>
+            </div>
+            <div>
+              <label for="comments"><br>Comments</label>
+              <textarea id="comments" name="comments"></textarea>
+            </div>
+            <input type="hidden" name="hidden" value="hi">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+          </form>   
+    </main>
+    <footer class="footer-container">    
+        <a class="small-text" href="https://austincodingacademy.com/">©2020 Austin Coding Academy</a>
+    </footer>        
+</body>
+</html>

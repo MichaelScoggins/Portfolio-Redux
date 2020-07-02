@@ -1,0 +1,142 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgoldenrodyellow;    
+    font-size: larger;
+    font-weight: 600;
+    color: black;
+}
+
+#contact-header {
+    font-family: 'Krona One', sans-serif;
+    margin-left: 10px;
+}
+
+.contactlogo {
+    grid-area: contactlogo;
+    display: flex;
+    flex-direction: row;
+    /* align-self: flex-start; */
+    justify-self: center;
+    /* align-items: center; */
+    margin-top: 80px;    
+    /* margin-right: 25px; */
+    font-size: 40px;
+    color: blue;
+    font-family: 'Krona One', sans-serif;
+}
+
+.main-container {
+    margin-left: 10px;
+}
+
+.blocklabel label {
+    display: block;
+}
+
+.gender label {
+    font-size: normal;
+    font-weight: normal;
+}
+
+.howdid label {
+    font-size: normal;
+    font-weight: normal;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "contactlogo contactlogo logo"
+    "nav nav logo";
+    /* height: 300px; */
+
+}
+
+.navbar {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 35px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 17px;
+}
+
+.navbar a:link {
+    text-decoration: none;
+    color: black
+}
+
+.navbar a:hover {
+    color: lightseagreen;
+}
+
+
+/* hey clayton why does this not override the rule above? */
+/* .contact-link a:hover { */
+    /* color: orange; */
+    /* color: none; */
+/* } */
+
+.contact-link {
+    color: orange;
+}
+
+/* .navbar a:visited {
+    color: inherit;
+} */
+
+
+.logo {
+    grid-area: logo;
+    width: 80%;
+    /* height: 70%; */
+    display: flex;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+.footer-container {
+    background-color: gray;
+}
+
+@media (max-width: 972px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contactlogo {
+        font-size: 25px;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "contactheader"
+        "main"
+        "footer";
+    }
+
+    .header-container {
+        grid-area: header;        
+    }
+
+    .contact-header {
+        grid-area: contactheader;
+    }
+
+    .main-container {
+        grid-area: main;
+    }
+
+    .footer-container {
+        grid-area: footer;
+    }
+}
