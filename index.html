@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Krona+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Michael Scoggins</title>
+</head>
+<body>
+    <header class="header-container">
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 10</div>
+            <img src="/images/barbershop/bs index.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 10</div>
+            <img src="/images/barbershop/bs index responsive.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 10</div>
+            <img src="/images/barbershop/bs about.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 10</div>
+            <img src="/wallpaper2you_259445.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">5 / 10</div>
+            <img src="/il_fullxfull.695947728_2hfk.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">6 / 10</div>
+            <img src="/15999-psychedelic-1920x1200-artistic-wallpaper.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">7 / 10</div>
+            <img src="/889653.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">8 / 10</div>
+            <img src="/a3854208985_16.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">9 / 10</div>
+            <img src="/da7896d6abe683cec8eae4da1cec5fa8.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">10 / 10</div>
+            <img src="/Mandel_zoom_00_mandelbrot_set.jpg" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="demobox">
+            <div class="column">
+              <img class="demo cursor" src="/images/barbershop/bs index.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Business With Style.">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/889653.png" style="width: 100%" onclick="currentSlide(2)" alt="Snow">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/tumblr_m4mv8p86VY1rnk9soo1_1280.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/a3854208985_16.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/Mandel_zoom_00_mandelbrot_set.jpg" style="width: 100%" onclick="currentSlide(5)" alt="Northern Lights">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/Psychedelic-Psychedelic-drawing-www.fluorencia.com_.ar_.jpg" style="width: 100%" onclick="currentSlide(6)" alt="Northern Lights">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/Psychedelic-Wallpaper-Stock-Images-Desktop.jpg" style="width: 100%" onclick="currentSlide(7)" alt="Northern Lights">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/da7896d6abe683cec8eae4da1cec5fa8.jpg" style="width: 100%" onclick="currentSlide(8)" alt="Northern Lights">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/psychedelic-skull-wide-wallpaper-334029.jpg" style="width: 100%" onclick="currentSlide(9)" alt="Northern Lights">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="/wallpaper2you_259445.jpg" style="width: 100%" onclick="currentSlide(10)" alt="Northern Lights">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        <!-- <div class="aboutlogo"> -->
+            <!-- ABOUT ME -->
+            <!-- </div> -->
+            <nav>                           
+              <ul>                
+                <li><a id="portmodal" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Portfolio</a></li>
+                <li><a href="/pages/aboutpage.html">About</a></li>
+                <li><a href="/pages/">Résumé</a></li>
+                <li><a href="https://medium.com/me/stories/public" target="_blank">Blog</a></li>
+                <li><a href="/pages/contact-me.html">Contact</a></li>
+                <li><a href="/pages/img-gal.html">Inspiration</a></li>
+              </ul>
+            </nav>
+        
+        <!-- <img class="logo" src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" alt="austin coding academy logo"> -->
+    </header>
+    <!-- <main class="main-container">         -->
+        <!-- <img id="main-image" src="/images/coding-vs-programming-2.jpg" alt="coding vs programming"> -->
+        <!-- <p id="main-paragraph"> -->
+            <!-- Hi! I'm Michael Scoggins: programmer and web developer. If you have an idea you need web-ified, let's collaborate! -->
+        <!-- </p> -->
+        <!-- <button id="portfolio">Portfolio</button>    -->
+        <!-- <ul class="contact-info" type:a> -->
+            
+            <!-- <a href="#"> <li class="fab fa-twitter-square"></li></a> -->
+            <!-- <a href="#"> <li class="fab fa-facebook"></li></a> -->
+            <!-- <a href="#"> <li class="fab fa-google-plus-square"></li></a> -->
+            <!-- <a href="#"> <li class="fab fa-pinterest"></li></a> -->
+            <!-- <a class="li">832-330-7783<br></a> -->
+            <!-- <a mailto:mtx28@hotmail.com> <li class="fas fa-envelope-square"></li></a> -->
+            <!-- <a class="li" href="https://www.linkedin.com/in/michael-a-scoggins/">LinkedIn<br></a> -->
+        <!-- </ul> -->
+    <!-- </main> -->
+    <footer class="footer-container">    
+        <!-- <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a> -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2aa40c98be.js" crossorigin="anonymous"></script>
+    <script src="/scripts/scripts.js"</script>
+</body>
+</html>
