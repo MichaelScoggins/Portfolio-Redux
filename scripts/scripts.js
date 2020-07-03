@@ -39,26 +39,26 @@ function showSlides(n) {
 
 
 
+
+
 // define the canvas
 let canvas = document.getElementById("my-canvas")
 // console.log(canvas)
 
 // adjust the canvas
-canvas.width = 300;
-canvas.height = 300;
-
-canvas.style.backgroundColor = "blue";
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 // capture the drawing context in a variable
 const c = canvas.getContext('2d')
 
 // TODO follow the instructions in the Canvas Pt. 2 Pre-Lesson to see how to build this project
 
-let x = 500;
-let y = 500;
-let xVelocity = 4;
-let yVelocity = 4;
-let radius = 20;
+let x = 300;
+let y = 300;
+let xVelocity = 6;
+let yVelocity = 6;
+let radius = 60;
 
 const animate = () => {
   const colors = [null, "#8C0C3C", "#1B2968", "#4B9C2B", "#A4C89C", "#F8605F", "#F8B493", "#32B9B2", "#F85532", "#C2C8E4", "#357153", "#A061D4", "#404462"]
@@ -68,7 +68,7 @@ const animate = () => {
   requestAnimationFrame(animate)
   c.clearRect(0, 0, innerWidth, innerHeight)
   c.beginPath();
-  c.strokeStyle = colors[randomIndex];
+  c.strokeStyle = "white";
   c.arc(x, y, radius, 0, 2 * Math.PI);
   c.stroke();
 
@@ -92,3 +92,4 @@ const animate = () => {
 }
 
 animate()
+
