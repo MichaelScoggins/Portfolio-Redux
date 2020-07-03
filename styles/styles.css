@@ -11,6 +11,8 @@ body{
   background-size: cover;
   background-position: center;
   height: 100vh;
+  /* width: 100vw; */
+
 }
 
 nav{
@@ -24,6 +26,7 @@ nav ul{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* align-content: flex-start; */
   height: 100%;
   list-style: none;
   perspective: 640px;
@@ -59,17 +62,14 @@ nav ul li a:hover{
   color: black;
 }
 
-/* .canvas-div {
-  grid-area: canvasdiv;
-  width: 100%;
-  height: 100%;
+#my-canvas {
+  /* background-color: blue;  */
+  width: 27%;
+  height: 28%; 
+  position: absolute;
+  bottom: 21%;
+  right: .5%;
   
-} */
-
-.header-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "navdiv canvasdiv";
 }
 
 
@@ -222,3 +222,8 @@ img.hover-shadow {
     width: 100%;
   }
 }
+
+@media screen and (max-height: 600px) {
+  .canvas-div {
+    display: none;
+  }
