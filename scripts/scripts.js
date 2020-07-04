@@ -42,13 +42,6 @@ function showSlides(n) {
 
 
 
-
-
-
-
-
-
-
 let canvas = document.getElementById("my-canvas")
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -62,8 +55,8 @@ function Circle(x, y, dx, dy, radius) {
   this.dy = dy;
   this.radius = radius;
 
-  const colors = [null, "#8C0C3C", "#1B2968", "#4B9C2B", "#A4C89C", "#F8605F", "#F8B493", "#32B9B2", "#F85532", "#C2C8E4", "#357153", "#A061D4", "#404462"]
-        
+  const colors = [null, "#8C0C3C", "#1B2968", "#4B9C2B", "#A4C89C", "#F8605F", "#F8B493", "#32B9B2", "#F85532", "#C2C8E4", "#357153", "#A061D4", "#404462"]        
+  // const colors = [null, "rgba(100,200,50,.2)", "#1B2968", "#4B9C2B", "#A4C89C", "#F8605F", "#F8B493", "#32B9B2", "#F85532", "#C2C8E4", "#357153", "#A061D4", "#404462"]  
   const randomIndex = Math.floor(Math.random() * (13 - 1)) + 1
 
   this.draw = function() {
@@ -71,17 +64,18 @@ function Circle(x, y, dx, dy, radius) {
     c.strokeStyle = colors[randomIndex]
     c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
     
-    // c.fillStyle = colors[randomIndex]
-    // c.fill()
+    c.fillStyle = colors[randomIndex]
+    c.fill()
+
     c.stroke()
   }
 
   this.update = function () {
-    if(this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+    if(this.x + this.radius > innerWidth + 10 || this.x - this.radius < -10) {
       (this.dx = -this.dx)
     }
 
-    if(this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+    if(this.y + this.radius > innerHeight +5 || this.y - this.radius < -5) {
       (this.dy = -this.dy)
     }  
     this.y += this.dy
@@ -94,12 +88,12 @@ function Circle(x, y, dx, dy, radius) {
 
 let circleArray = [];
 
-for (i = 0; i < 40; i++) {
+for (i = 0; i < 30; i++) {
   let radius = 50;
   let x = Math.random() * (innerWidth - radius * 2) + radius;
   let y = Math.random() * (innerHeight - radius * 2) + radius;
-  let dx = (Math.random() - 0.5) * 6;
-  let dy = (Math.random() - 0.5) * 6;
+  let dx = (Math.random() - 0.5) * 3;
+  let dy = (Math.random() - 0.5) * 3;
   circleArray.push(new Circle(x, y, dx, dy, radius))
 }
 
