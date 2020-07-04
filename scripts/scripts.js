@@ -13,6 +13,8 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
+// document.getElementsByClassName("prev").addEventListener()
+
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -41,54 +43,74 @@ function showSlides(n) {
 
 
 
-// define the canvas
-let canvas = document.getElementById("my-canvas")
-// console.log(canvas)
 
-// adjust the canvas
+
+
+
+
+
+let canvas = document.getElementById("my-canvas")
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-// capture the drawing context in a variable
 const c = canvas.getContext('2d')
 
-// TODO follow the instructions in the Canvas Pt. 2 Pre-Lesson to see how to build this project
+function Circle(x, y, dx, dy, radius) {
+  this.x = x;
+  this.y = y;
+  this.dx = dx;
+  this.dy = dy;
+  this.radius = radius;
 
-let x = 300;
-let y = 300;
-let xVelocity = 6;
-let yVelocity = 6;
-let radius = 60;
-
-const animate = () => {
   const colors = [null, "#8C0C3C", "#1B2968", "#4B9C2B", "#A4C89C", "#F8605F", "#F8B493", "#32B9B2", "#F85532", "#C2C8E4", "#357153", "#A061D4", "#404462"]
         
   const randomIndex = Math.floor(Math.random() * (13 - 1)) + 1
-  // use this special Window method to refresh the Window and call `animate` again, and again, and again...
-  requestAnimationFrame(animate)
-  c.clearRect(0, 0, innerWidth, innerHeight)
-  c.beginPath();
-  c.strokeStyle = "white";
-  c.arc(x, y, radius, 0, 2 * Math.PI);
-  c.stroke();
 
-  
+  this.draw = function() {
+    c.beginPath();
+    c.strokeStyle = colors[randomIndex]
+    c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+    
+    // c.fillStyle = colors[randomIndex]
+    // c.fill()
+    c.stroke()
+  }
 
-    // Conditional, if x is greater than innerWidth
-    if(x + radius > innerWidth || x - radius < 0) {
-      (xVelocity = -xVelocity)
+  this.update = function () {
+    if(this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+      (this.dx = -this.dx)
     }
 
-    if(y + radius > innerHeight || y - radius < 0) {
-      (yVelocity = -yVelocity)
-    }
+    if(this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+      (this.dy = -this.dy)
+    }  
+    this.y += this.dy
+    this.x += this.dx
 
-    // // Conditional, if x is greater than innerWidth
-    // if(y + radius > innerWidth || y - radius < 0) {
-    //   yVelocity = -yVelocity
-    // }  
-  y += yVelocity
-  x += xVelocity
+    this.draw();
+  }
+
 }
 
-animate()
+let circleArray = [];
+
+for (i = 0; i < 40; i++) {
+  let radius = 50;
+  let x = Math.random() * (innerWidth - radius * 2) + radius;
+  let y = Math.random() * (innerHeight - radius * 2) + radius;
+  let dx = (Math.random() - 0.5) * 6;
+  let dy = (Math.random() - 0.5) * 6;
+  circleArray.push(new Circle(x, y, dx, dy, radius))
+}
+
+const animate = () => {
+  requestAnimationFrame(animate)    
+
+  c.clearRect(0, 0, innerWidth, innerHeight) 
+
+  for (i = 0; i < circleArray.length; i++) {
+    circleArray[i].update();
+  }
+
+}
+  animate()
