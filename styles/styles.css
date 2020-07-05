@@ -70,6 +70,7 @@ nav ul li a:hover{
 
 #my-canvas {
   /* background-color: blue;  */
+  display: block;
   width: 26.2%;
   height: 28.2%; 
   position: absolute;
@@ -275,7 +276,7 @@ nav ul li a:hover{
   
 }
 
-/* .mini-img1 {
+.mini-img1 {
   width: 40%;
   margin-left: 24px;
 }
@@ -289,7 +290,7 @@ nav ul li a:hover{
   width: 69%;
   margin-left: -10px;
 
-} */
+}
 
 
 * {box-sizing: border-box}
@@ -300,24 +301,22 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .mini-slideshow-container {
-  width: 26.2%;
+  width: 20%;
+  height: 20%; 
+  position: absolute;
+  bottom: 30.5%;
+  right: .05%;  
+}
+
+
+/* scrollable macintosh */
+/* width: 26.2%;
   height: 28.2%; 
   position: absolute;
   bottom: 22.5%;
   right: 1%;
-  overflow: scroll;
-}
-
-
-
-
-
-  /* width: 20%;
-  height: 20%; 
-  position: absolute;
-  bottom: 30.5%;
-  right: .05%;
   overflow: scroll; */
+
 
 
 /* Next & previous buttons */

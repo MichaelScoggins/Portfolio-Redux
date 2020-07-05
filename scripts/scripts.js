@@ -1,21 +1,21 @@
 // add event listener
 
 
-// document.getElementById("portmodal").addEventListener("onmouseover", handleHover() {
-  // document.getElementsById.("mini-slideshow-div").style.display = "block";
-  // });
-
   document.getElementById("portmodal").addEventListener("mouseover", handleHover);
+  document.getElementById("portmodal").addEventListener("mouseout", noHover);
   
   function handleHover() {
-    document.getElementById("mini-slideshow-div").style.display = "block";
-    console.log(handleHover)
+    document.getElementById("mini-slideshow-div").style.display = "block";    
   }
 
-  
+  function noHover() {
+    document.getElementById("mini-slideshow-div").style.display = "none";
+  }
 
+  // function hideCanvas() {
+  //   document.getElementById("my-canvas").style.display = "none";
 
-
+  // }
 
 
 
@@ -100,7 +100,7 @@ function showSlides1() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides1, 2000); // Change image every 2 seconds
+  setTimeout(showSlides1, 2000);
 }
 
 // function showSlides1(n) {
