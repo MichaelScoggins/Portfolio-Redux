@@ -139,9 +139,7 @@ const c = canvas.getContext('2d')
 window.addEventListener('resize', function() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-
   init()
-
 })
 
 function Circle(x, y, dx, dy, radius) {
@@ -185,7 +183,7 @@ let circleArray = [];
 function init() {
 
   circleArray = [];
-  for (i = 0; i < 400; i++) {
+  for (i = 0; i < 200; i++) {
     let radius = 4;
     let x = Math.random() * (innerWidth - radius * 2) + radius;
     let y = Math.random() * (innerHeight - radius * 2) + radius;
