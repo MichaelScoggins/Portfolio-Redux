@@ -486,3 +486,22 @@ img {vertical-align: middle;}
   }
 
 } 
+
+@media (min-aspect-ratio: 2/1) {
+    #my-canvas {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 1450px) and (min-height: 781px) {
+  #my-canvas {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  #my-canvas {
+    display: none;
+  }
+}
