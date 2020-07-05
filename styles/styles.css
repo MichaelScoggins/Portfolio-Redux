@@ -219,7 +219,7 @@ nav ul li a:hover{
   top: 0;
 }
 
-img {
+.mySlides img {
   margin-bottom: -4px;
 }
 
@@ -239,7 +239,7 @@ img {
   opacity: 1;
 }
 
-img.hover-shadow {
+.mySlides img.hover-shadow {
   transition: 0.3s;
 }
 
@@ -255,6 +255,139 @@ img.hover-shadow {
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+.mini-slideshow-div {
+  /* display: none; */
+  
+}
+
+.mini-img1 {
+  width: 40%;
+  margin-left: 24px;
+}
+
+.mini-img2 {
+  width: 60%;
+
+}
+
+.mini-img3 {
+  width: 69%;
+  margin-left: -10px;
+
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+.miniSlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.mini-slideshow-container {
+  width: 20%;
+  height: 20%; 
+  position: absolute;
+  bottom: 30.5%;
+  right: .05%;
+}
+
+/* Next & previous buttons */
+/* .mini-prev, .mini-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+} */
+
+/* Position the "next button" to the right */
+/* .mini-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* .mini-prev:hover, .mini-next:hover {
+  background-color: rgba(0,0,0,0.8);
+} */ 
+
+/* Caption text */
+/* .mini-text {
+  color: #f2f2f2;
+  font-size: 18px;
+  position: relative;
+  font-weight: 600;
+  right: 20%;
+  margin-top: 5px;
+  text-align: center;
+} */
+
+/* Number text (1/3 etc) */
+/* .mini-numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  left: 20%;
+} */
+
+/* The dots/bullets/indicators */
+/* .mini-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10%;
+  transition: background-color 0.6s ease;
+} */
+
+
+.active, .mini-dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.mini-fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes mini-fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes mini-fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .mini-prev, .mini-next,.mini-text {font-size: 11px}
+}
+
+
+
 
 
 

@@ -1,3 +1,5 @@
+
+// popup modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
@@ -42,10 +44,69 @@ function showSlides(n) {
 
 
 
+// mini-slideshow modal
+var slideIndex1 = 1;
+showSlides1(slideIndex1);
+
+function plusMiniSlides(n) {
+  showSlides1(slideIndex1 += n);
+}
+
+// function currentMiniSlide(n) {
+//   showSlides1(slideIndex1 = n);
+// }
+
+var slideIndex = 0;
+showSlides1();
+
+function showSlides1() {
+  var i;
+  var slides = document.getElementsByClassName("mini-slides");
+  var dots = document.getElementsByClassName("mini-dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides1, 2000); // Change image every 2 seconds
+}
+
+// function showSlides1(n) {
+//   var i;
+//   var slides1 = document.getElementsByClassName("mini-slides");
+//   var dots1 = document.getElementsByClassName("mini-dot");
+//   if (n > slides1.length) {slideIndex1 = 1}    
+//   if (n < 1) {slideIndex1 = slides1.length}
+//   for (i = 0; i < slides1.length; i++) {
+//       slides1[i].style.display = "none";  
+//   }
+//   for (i = 0; i < dots1.length; i++) {
+//       dots1[i].className = dots1[i].className.replace(" active", "");
+//   }
+//   slides1[slideIndex1-1].style.display = "block";  
+//   dots1[slideIndex1-1].className += " active";
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// screensaver
 let canvas = document.getElementById("my-canvas")
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
 const c = canvas.getContext('2d')
 
 window.addEventListener('resize', function() {
@@ -71,11 +132,9 @@ function Circle(x, y, dx, dy, radius) {
   this.draw = function() {
     c.beginPath();
     c.strokeStyle = colors[randomIndex]
-    c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-    
+    c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);    
     c.fillStyle = colors[randomIndex]
     c.fill()
-
     c.stroke()
   }
 
@@ -92,9 +151,7 @@ function Circle(x, y, dx, dy, radius) {
 
     this.draw();
   }
-
 }
-
 
 let circleArray = [];
 
