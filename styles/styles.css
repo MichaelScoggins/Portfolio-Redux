@@ -1,3 +1,4 @@
+/* desktop sim + nav */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 
 *{
@@ -30,6 +31,7 @@ nav ul{
   height: 100%;
   list-style: none;
   perspective: 640px;
+  z-index: 1;
 }
 
 ul:hover li:not(:hover){
@@ -62,12 +64,12 @@ nav ul li a:hover{
   color: black;
 }
 
-/* .canvas-div {
-  overflow: hidden;
-
-} */
 
 
+
+
+
+/* macintosh canvas */
 #my-canvas {
   /* background-color: blue;  */
   display: block;
@@ -91,7 +93,7 @@ nav ul li a:hover{
 }
 
 
-/* hang in there */
+/* hang in there poster */
 .img {
       position: absolute;
       top: 1%;
@@ -101,13 +103,14 @@ nav ul li a:hover{
       /* border: 1px solid #E5D8BB; */
       background: url(/images/hang-in-there.jpg) no-repeat;
       opacity: .6;
+      z-index: -1;
       /* box-shadow: 1px 1px 2px #ccc;
       -moz-box-shadow: 1px 1px 2px #ccc;
       -webkit-box-shadow: 1px 1px 2px #ccc;
       -khtml-box-shadow: 1px 1px 2px #ccc; */
     }
 
-.thumbnail-div {
+/* .thumbnail-div {
   width: 20%;
   height: 20%; 
   position: absolute;
@@ -118,7 +121,7 @@ nav ul li a:hover{
 #bs-ipad-tn {
   width: 60%;
   display: none;
-}
+} */
 
 
 
@@ -128,7 +131,7 @@ nav ul li a:hover{
 
 
 
-/* large modal css */
+/* popup modal css */
 * {
   box-sizing: border-box;
 }
@@ -150,13 +153,13 @@ nav ul li a:hover{
 
 /* The Modal (background) */
 .modal {
-  display: none;
-  position: fixed;
+  /* display: none; */
+  position: absolute;
   z-index: 1;
   padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
+  left: 49%;
+  /* top: 1%; */
+  width: 50%;
   height: 100%;
   overflow: auto;
   background-color: black;
@@ -202,7 +205,7 @@ nav ul li a:hover{
 .next {
   cursor: pointer;
   position: absolute;
-  top: 150px;
+  top: 300px;
   width: auto;
   padding: 14px;
   margin-top: -50px;
@@ -497,11 +500,17 @@ img {vertical-align: middle;}
   #my-canvas {
     display: none;
   }
+  #macWallpaper {
+    display: none;
+  }
 
 }
 
 @media screen and (max-width: 950px) {
   #my-canvas {
+    display: none;
+  }
+  #macWallpaper {
     display: none;
   }
 }

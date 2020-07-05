@@ -10,10 +10,11 @@
     document.getElementById("macWallpaper").style.display = "block";
   }
 
-  function noHover() {
+  function noHover() {    
     document.getElementById("mini-slideshow-div").style.display = "none";
-    document.getElementById("my-canvas").style.display = "block";
     document.getElementById("macWallpaper").style.display = "none";
+    document.getElementById("my-canvas").style.display = "block"
+    // document.getElementById("my-canvas").removeProperty('display');
   }
 
 
