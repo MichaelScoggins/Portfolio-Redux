@@ -62,7 +62,10 @@ nav ul li a:hover{
   color: black;
 }
 
+/* .canvas-div {
+  overflow: hidden;
 
+} */
 
 
 #my-canvas {
@@ -71,8 +74,7 @@ nav ul li a:hover{
   height: 28.2%; 
   position: absolute;
   bottom: 22.5%;
-  right: 1%;
-  
+  right: 1%;  
 }
 
 
@@ -108,6 +110,12 @@ nav ul li a:hover{
 
 
 
+
+
+
+
+
+/* large modal css */
 * {
   box-sizing: border-box;
 }
@@ -262,12 +270,12 @@ nav ul li a:hover{
 
 
 
-.mini-slideshow-div {
-  /* display: none; */
+#mini-slideshow-div {
+  display: none;
   
 }
 
-.mini-img1 {
+/* .mini-img1 {
   width: 40%;
   margin-left: 24px;
 }
@@ -281,7 +289,7 @@ nav ul li a:hover{
   width: 69%;
   margin-left: -10px;
 
-}
+} */
 
 
 * {box-sizing: border-box}
@@ -292,12 +300,25 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .mini-slideshow-container {
-  width: 20%;
+  width: 26.2%;
+  height: 28.2%; 
+  position: absolute;
+  bottom: 22.5%;
+  right: 1%;
+  overflow: scroll;
+}
+
+
+
+
+
+  /* width: 20%;
   height: 20%; 
   position: absolute;
   bottom: 30.5%;
   right: .05%;
-}
+  overflow: scroll; */
+
 
 /* Next & previous buttons */
 /* .mini-prev, .mini-next {

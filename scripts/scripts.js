@@ -1,3 +1,30 @@
+// add event listener
+
+
+// document.getElementById("portmodal").addEventListener("onmouseover", handleHover() {
+  // document.getElementsById.("mini-slideshow-div").style.display = "block";
+  // });
+
+  document.getElementById("portmodal").addEventListener("mouseover", handleHover);
+  
+  function handleHover() {
+    document.getElementById("mini-slideshow-div").style.display = "block";
+    console.log(handleHover)
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 // popup modal
 function openModal() {
@@ -179,3 +206,4 @@ const animate = () => {
 
 init()
 animate()
+
