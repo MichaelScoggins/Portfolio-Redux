@@ -7,17 +7,15 @@
   function handleHover() {
     document.getElementById("mini-slideshow-div").style.display = "block";
     document.getElementById("my-canvas").style.display = "none";
+    document.getElementById("macWallpaper").style.display = "block";
   }
 
   function noHover() {
     document.getElementById("mini-slideshow-div").style.display = "none";
     document.getElementById("my-canvas").style.display = "block";
+    document.getElementById("macWallpaper").style.display = "none";
   }
 
-  // function hideCanvas() {
-  //   document.getElementById("my-canvas").style.display = "none";
-
-  // }
 
 
 

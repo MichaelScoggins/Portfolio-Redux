@@ -78,6 +78,18 @@ nav ul li a:hover{
   right: 1%;  
 }
 
+#macWallpaper {
+  display: none;
+  border-radius: 4px 5px 5px 5px;
+  width: 26.4%;
+  height: 28.2%; 
+  position: absolute;
+  bottom: 22.5%;
+  right: .8%;  
+  background: url(/wallpaper2you_259466.jpg) no-repeat;
+  overflow: hidden;  
+}
+
 
 /* hang in there */
 .img {
@@ -435,6 +447,18 @@ img {vertical-align: middle;}
     right: 1%;
   }
 
+  #macWallpaper {
+    display: none;
+    border-radius: 4px 5px 5px 5px;
+    width: 26.2%;
+    height: 27.8%; 
+    position: absolute;
+    bottom: 22.5%;
+    right: 1%; 
+    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    overflow: hidden;  
+  }
+
 } 
 
 @media (max-aspect-ratio: 9/5) {
@@ -446,6 +470,19 @@ img {vertical-align: middle;}
     bottom: 25.4%;
     right: 1%;
     
+  }
+
+  #macWallpaper {
+    /* background-color: blue; */
+    display: none;
+    border-radius: 4px 5px 5px 5px;
+    width: 26.2%;
+    height: 26.3%; 
+    position: absolute;
+    bottom: 24%;
+    right: 1%;
+    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    overflow: hidden;  
   }
 
 } 
