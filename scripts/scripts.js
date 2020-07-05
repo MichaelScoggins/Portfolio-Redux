@@ -5,11 +5,13 @@
   document.getElementById("portmodal").addEventListener("mouseout", noHover);
   
   function handleHover() {
-    document.getElementById("mini-slideshow-div").style.display = "block";    
+    document.getElementById("mini-slideshow-div").style.display = "block";
+    document.getElementById("my-canvas").style.display = "none";
   }
 
   function noHover() {
     document.getElementById("mini-slideshow-div").style.display = "none";
+    document.getElementById("my-canvas").style.display = "block";
   }
 
   // function hideCanvas() {
