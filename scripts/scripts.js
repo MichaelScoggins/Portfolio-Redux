@@ -1,8 +1,34 @@
-// add event listener
 
+  // $(document).ready(function() {
+  //   $('#trigger').click(function(){
+  //     $("#dialog").dialog();      
+  //   }); 
+  // });    
 
+  $('html').click(function() {
+    $('#dialog').hide(); 
+ });
+ 
+ $('li').click(function(event){
+      event.stopPropagation();
+ });
+ 
+ $('#trigger').click(function(event){
+      $('#dialog').toggle();
+ });
+
+//event listeners
   document.getElementById("portmodal").addEventListener("mouseover", handleHover);
   document.getElementById("portmodal").addEventListener("mouseout", noHover);
+  // document.getElementById("canvas-div").addEventListener("mouseover", handleSS);
+  // document.getElementById("canvas-div").addEventListener("mouseout", noSS);
+  // document.getElementById("my-canvas").addEventListener("mouseover", handleSS);
+  // document.getElementById("my-canvas").addEventListener("mouseout", noSS);
+  document.getElementById("macWallpaper").addEventListener("click", wallpaper2blog);
+  // document.getElementById("trigger").addEventListener("click", linkPopup);
+
+
+
   
   function handleHover() {
     document.getElementById("mini-slideshow-div").style.display = "block";
@@ -16,10 +42,45 @@
     document.getElementById("canvas-div").style.display = "block"
     // document.getElementById("my-canvas").removeProperty('display');
   }
+  function wallpaper2blog() {    
+    window.open('https://medium.com/me/stories/public', '_blank');
+  }
+
+  // function linkPopup() {
+    // document.getElementById("dialog").style.display = "block";
+    // document.getElementById("body").addEventListener("click", function(){
+    //   document.getElementById("dialog").style.display = "none"
+    //   });
+  // }
 
 
+  // function handleSS() {
+  //   var myobj = document.getElementById("my-canvas");
+  //     myobj.remove(); 
+  //   // document.getElementById("my-canvas").style.display = "none";
+  //   // document.getElementById("canvas-div").style.display = "none";
+  //   document.getElementById("macWallpaper").style.display = "block";
+  // }
 
+  // function noSS() {
+  //   var myobj = document.getElementById("my-canvas");
+  //     myobj.add(); 
+  //   document.getElementById("canvas-div").style.display = "block";
+  //   document.getElementById("my-canvas").style.display = "block";
+  //   document.getElementById("macWallpaper").style.display = "none";
+  // }
 
+  $(document).ready(function(){
+    var x;
+    $("#my-canvas").mouseover(function(){
+      x = $("#my-canvas").detach();      
+    document.getElementById("macWallpaper").style.display = "block";
+    });
+    $("#macWallpaper").mouseout(function(){      
+    document.getElementById("macWallpaper").style.display = "none";
+      $("#canvas-div").prepend(x);
+    });
+  });
 
 
 
