@@ -6,14 +6,14 @@
   
   function handleHover() {
     document.getElementById("mini-slideshow-div").style.display = "block";
-    document.getElementById("my-canvas").style.display = "none";
+    document.getElementById("canvas-div").style.display = "none";
     document.getElementById("macWallpaper").style.display = "block";
   }
 
   function noHover() {    
     document.getElementById("mini-slideshow-div").style.display = "none";
     document.getElementById("macWallpaper").style.display = "none";
-    document.getElementById("my-canvas").style.display = "block"
+    document.getElementById("canvas-div").style.display = "block"
     // document.getElementById("my-canvas").removeProperty('display');
   }
 
@@ -119,11 +119,6 @@ function showSlides1() {
 //   slides1[slideIndex1-1].style.display = "block";  
 //   dots1[slideIndex1-1].className += " active";
 // }
-
-
-
-
-
 
 
 

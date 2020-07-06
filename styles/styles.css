@@ -66,42 +66,61 @@ nav ul li a:hover{
 
 
 
-
+* {box-sizing: border-box}
 
 
 /* macintosh canvas */
+
+#canvas-div {
+  display: block;
+
+}
+
 #my-canvas {
-  /* background-color: blue;  */
+  position: absolute;  
+  width: 20%;
+  height: 20%; 
+  bottom: 30.5%;
+
+  right: .05%;  
+
+}
+
+/* #my-canvas {
   display: block;
   width: 26.2%;
   height: 28.2%; 
   position: absolute;
-  bottom: 22.5%;
   right: 1%;  
-}
+  bottom: 22.5%;
+} */
 
 #macWallpaper {
   display: none;
-  border-radius: 4px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
   width: 26.4%;
   height: 28.2%; 
   position: absolute;
   bottom: 22.5%;
   right: .8%;  
   background: url(/wallpaper2you_259466.jpg) no-repeat;
-  overflow: hidden;  
+  background-size: cover;
+  /* overflow: hidden;   */
 }
 
 
 /* hang in there poster */
-.img {
+.cat-img {
       position: absolute;
       top: 1%;
-      left: 44%;
-      width: 205px;
-      height: 260px;
+      left: 38%;
+      width: 250px;
+      height: 320px;
+      /* width: 20%; */
+      /* height: 50%; */
       /* border: 1px solid #E5D8BB; */
       background: url(/images/hang-in-there.jpg) no-repeat;
+      background-size: cover;
       opacity: .6;
       z-index: -1;
       /* box-shadow: 1px 1px 2px #ccc;
@@ -156,7 +175,7 @@ nav ul li a:hover{
   /* display: none; */
   position: absolute;
   z-index: 1;
-  padding-top: 50px;
+  padding-top: 50-px;
   left: 49%;
   /* top: 1%; */
   width: 50%;
@@ -178,7 +197,7 @@ nav ul li a:hover{
 /* The Close Button */
 .close {
   color: white;
-  position: absolute;
+  /* position: absolute; */
   top: 10px;
   right: 25px;
   font-size: 35px;
@@ -459,6 +478,7 @@ img {vertical-align: middle;}
     bottom: 22.5%;
     right: 1%; 
     background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background-size: cover;
     overflow: hidden;  
   }
 
@@ -476,29 +496,73 @@ img {vertical-align: middle;}
   }
 
   #macWallpaper {
-    /* background-color: blue; */
     display: none;
-    border-radius: 4px 5px 5px 5px;
+    border-radius: 6px 6px 6px 6px;
     width: 26.2%;
     height: 26.3%; 
     position: absolute;
     bottom: 24%;
-    right: 1%;
+    right: .9%;
     background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background-size: cover;
     overflow: hidden;  
   }
 
 } 
 
-@media (min-aspect-ratio: 2/1) {
+@media (min-aspect-ratio: 5/2) {
+  #my-canvas {
+    /* background-color: blue;  */
+    width: 26.2%;
+    height: 33%; 
+    position: absolute;
+    bottom: 17.4%;
+    right: 1%;    
+  }
     #my-canvas {
       display: none;
     }
 }
 
+@media (min-aspect-ratio: 2/3) {
+  #my-canvas {
+    /* display: none; */
+  }
+
+}
+
+@media screen and (min-width: 1000px) and (min-height: 1200px) {
+  /* #my-canvas {
+    background-color: blue; 
+    width: 26.2%;
+    height: 33%; 
+    position: absolute;
+    bottom: 17.4%;
+    right: 1%;    
+  } */
+    #my-canvas {
+      display: none;
+    }
+}
+
+@media (min-aspect-ratio: 2/3) {
+  #my-canvas {
+    /* display: none; */
+  }
+}
+
 @media screen and (max-width: 1450px) and (min-height: 781px) {
   #my-canvas {
-    display: none;
+    /* background-color: blue;  */
+    width: 26.2%;
+    height: 25%; 
+    position: absolute;
+    bottom: 25.4%;
+    right: 1%;    
+  }
+
+  #my-canvas {
+    /* display: none; */
   }
   #macWallpaper {
     display: none;
@@ -508,9 +572,47 @@ img {vertical-align: middle;}
 
 @media screen and (max-width: 950px) {
   #my-canvas {
+    /* background-color: blue;  */
+    width: 26.2%;
+    height: 25%; 
+    position: absolute;
+    bottom: 25.4%;
+    right: 1%;    
+  }
+
+  #my-canvas {
     display: none;
   }
   #macWallpaper {
     display: none;
   }
+}
+
+@media screen and (min-width: 1500px) {
+  /* hang in there poster */
+.cat-img {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: 1%;
+  left: 40%;
+  background: url(/images/hang-in-there.jpg) no-repeat;
+  background-size: contain;
+  opacity: .6;
+  z-index: -1;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 1100px) {
+  .cat-img {
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    top: 1%;
+    left: 44%;
+    background: url(/images/hang-in-there.jpg) no-repeat;
+    background-size: contain;
+    opacity: .6;
+    z-index: -1;
+    }
 }
