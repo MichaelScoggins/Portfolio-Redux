@@ -1,3 +1,4 @@
+/* desktop sim + nav */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
 
 *{
@@ -30,6 +31,7 @@ nav ul{
   height: 100%;
   list-style: none;
   perspective: 640px;
+  z-index: 1;
 }
 
 ul:hover li:not(:hover){
@@ -64,23 +66,91 @@ nav ul li a:hover{
 
 
 
+* {box-sizing: border-box}
+
+
+/* macintosh canvas */
+
+#canvas-div {
+  display: block;
+
+}
 
 #my-canvas {
-  /* background-color: blue;  */
+  position: absolute;  
+  width: 20%;
+  height: 20%; 
+  bottom: 30.5%;
+
+  right: .05%;  
+
+}
+
+/* #my-canvas {
+  display: block;
   width: 26.2%;
-  height: 26.5%; 
+  height: 28.2%; 
   position: absolute;
-  bottom: 23.5%;
-  right: 1%;
-  
+  right: 1%;  
+  bottom: 22.5%;
+} */
+
+#macWallpaper {
+  display: none;
+  border-radius: 5px 5px 5px 5px;
+  width: 26.4%;
+  height: 28.2%; 
+  position: absolute;
+  bottom: 22.5%;
+  right: .8%;  
+  background: url(/wallpaper2you_259466.jpg) no-repeat;
+  background-size: cover;
+  /* overflow: hidden;   */
 }
 
 
+/* hang in there poster */
+.cat-img {
+      position: absolute;
+      top: 1%;
+      left: 38%;
+      width: 250px;
+      height: 320px;
+      /* width: 20%; */
+      /* height: 50%; */
+      /* border: 1px solid #E5D8BB; */
+      background: url(/images/hang-in-there.jpg) no-repeat;
+      background-size: cover;
+      opacity: .6;
+      z-index: -1;
+      /* box-shadow: 1px 1px 2px #ccc;
+      -moz-box-shadow: 1px 1px 2px #ccc;
+      -webkit-box-shadow: 1px 1px 2px #ccc;
+      -khtml-box-shadow: 1px 1px 2px #ccc; */
+    }
+
+/* .thumbnail-div {
+  width: 20%;
+  height: 20%; 
+  position: absolute;
+  bottom: 30.4%;
+  right: .6%;
+}
+
+#bs-ipad-tn {
+  width: 60%;
+  display: none;
+} */
 
 
 
 
 
+
+
+
+
+/* popup modal css */
 * {
   box-sizing: border-box;
 }
@@ -102,13 +172,13 @@ nav ul li a:hover{
 
 /* The Modal (background) */
 .modal {
-  display: none;
-  position: fixed;
+  /* display: none; */
+  position: absolute;
   z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
+  padding-top: 50-px;
+  left: 49%;
+  /* top: 1%; */
+  width: 50%;
   height: 100%;
   overflow: auto;
   background-color: black;
@@ -120,14 +190,14 @@ nav ul li a:hover{
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
+  /* width: 90%; */
   max-width: 1200px;
 }
 
 /* The Close Button */
 .close {
   color: white;
-  position: absolute;
+  /* position: absolute; */
   top: 10px;
   right: 25px;
   font-size: 35px;
@@ -154,7 +224,7 @@ nav ul li a:hover{
 .next {
   cursor: pointer;
   position: absolute;
-  top: 150px;
+  top: 300px;
   width: auto;
   padding: 14px;
   margin-top: -50px;
@@ -192,7 +262,7 @@ nav ul li a:hover{
   top: 0;
 }
 
-img {
+.mySlides img {
   margin-bottom: -4px;
 }
 
@@ -212,7 +282,7 @@ img {
   opacity: 1;
 }
 
-img.hover-shadow {
+.mySlides img.hover-shadow {
   transition: 0.3s;
 }
 
@@ -229,7 +299,321 @@ img.hover-shadow {
   }
 }
 
-@media screen and (max-height: 600px) {
-  .canvas-div {
+
+
+
+
+
+
+#mini-slideshow-div {
+  display: none;
+  
+}
+
+.mini-img1 {
+  width: 40%;
+  margin-left: 24px;
+}
+
+.mini-img2 {
+  width: 60%;
+
+}
+
+.mini-img3 {
+  width: 69%;
+  margin-left: -10px;
+
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+.miniSlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.mini-slideshow-container {
+  width: 20%;
+  height: 20%; 
+  position: absolute;
+  bottom: 30.5%;
+  right: .05%;  
+}
+
+
+/* scrollable macintosh */
+/* width: 26.2%;
+  height: 28.2%; 
+  position: absolute;
+  bottom: 22.5%;
+  right: 1%;
+  overflow: scroll; */
+
+
+
+/* Next & previous buttons */
+/* .mini-prev, .mini-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+} */
+
+/* Position the "next button" to the right */
+/* .mini-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* .mini-prev:hover, .mini-next:hover {
+  background-color: rgba(0,0,0,0.8);
+} */ 
+
+/* Caption text */
+/* .mini-text {
+  color: #f2f2f2;
+  font-size: 18px;
+  position: relative;
+  font-weight: 600;
+  right: 20%;
+  margin-top: 5px;
+  text-align: center;
+} */
+
+/* Number text (1/3 etc) */
+/* .mini-numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  left: 20%;
+} */
+
+/* The dots/bullets/indicators */
+/* .mini-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10%;
+  transition: background-color 0.6s ease;
+} */
+
+
+.active, .mini-dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.mini-fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes mini-fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes mini-fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .mini-prev, .mini-next,.mini-text {font-size: 11px}
+}
+
+
+
+
+
+
+/* @media screen and (min-height: 680px) and (min-width: 1400px) {
+  #my-canvas {
     display: none;
   }
+}
+
+
+@media screen and (min-height: 750px) {
+  #my-canvas {
+    display: none;
+  } */
+
+/* } */
+
+@media (min-aspect-ratio: 9/5) {
+  #my-canvas {
+    /* background-color: blue;  */
+    width: 26.2%;
+    height: 27.5%; 
+    position: absolute;
+    bottom: 22.9%;
+    right: 1%;
+  }
+
+  #macWallpaper {
+    display: none;
+    border-radius: 15px 9px 5px 5px;
+    width: 26.1%;
+    height: 28.4%; 
+    position: absolute;
+    bottom: 22.7%;
+    right: 1.1%; 
+    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;  
+  }
+
+} 
+
+@media (max-aspect-ratio: 9/5) {
+  #my-canvas {
+    /* background-color: blue;  */
+    width: 26.2%;
+    height: 25%; 
+    position: absolute;
+    bottom: 25.4%;
+    right: 1%;
+    
+  }
+
+  #macWallpaper {
+    display: none;
+    background-color: blue;
+    border-radius: 8px 6px 6px 6px;
+    width: 26.2%;
+    height: 26.3%; 
+    position: absolute;
+    bottom: 24.1%;
+    right: .9%;
+    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;  
+  }
+
+} 
+
+@media (min-aspect-ratio: 5/2) {
+  #my-canvas {
+    /* background-color: blue;  */
+    width: 26.2%;
+    height: 33%; 
+    position: absolute;
+    bottom: 17.4%;
+    right: 1%;    
+  }
+    #my-canvas {
+      display: none;
+    }
+}
+
+@media (min-aspect-ratio: 2/3) {
+  #my-canvas {
+    /* display: none; */
+  }
+
+}
+
+@media screen and (min-width: 1000px) and (min-height: 1200px) {
+  /* #my-canvas {
+    background-color: blue; 
+    width: 26.2%;
+    height: 33%; 
+    position: absolute;
+    bottom: 17.4%;
+    right: 1%;    
+  } */
+    #my-canvas {
+      display: none;
+    }
+}
+
+@media (min-aspect-ratio: 2/3) {
+  #my-canvas {
+    /* display: none; */
+  }
+}
+
+@media screen and (max-width: 1450px) and (min-height: 781px) {
+  #my-canvas {
+    /* background-color: blue;  */
+    width: 26.2%;
+    height: 25%; 
+    position: absolute;
+    bottom: 25.4%;
+    right: 1%;    
+  }
+
+  #my-canvas {
+    /* display: none; */
+  }
+  #macWallpaper {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  #my-canvas {
+    /* background-color: blue;  */
+    width: 26.2%;
+    height: 25%; 
+    position: absolute;
+    bottom: 25.4%;
+    right: 1%;    
+  }
+
+  #my-canvas {
+    display: none;
+  }
+  #macWallpaper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  /* hang in there poster */
+.cat-img {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: 1%;
+  left: 40%;
+  background: url(/images/hang-in-there.jpg) no-repeat;
+  background-size: contain;
+  opacity: .6;
+  z-index: -1;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 1100px) {
+  .cat-img {
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    top: 1%;
+    left: 44%;
+    background: url(/images/hang-in-there.jpg) no-repeat;
+    background-size: contain;
+    opacity: .6;
+    z-index: -1;
+    }
+}
