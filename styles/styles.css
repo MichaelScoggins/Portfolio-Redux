@@ -155,9 +155,9 @@ nav ul li a:hover{
 }
 
 /* Modal Content/Box */
-.about-modal-content {
+#about-modal-content {
   background-color: #fefefe;
-  margin: 5% auto; /* 15% from the top and centered */
+  margin: 2% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
@@ -165,11 +165,8 @@ nav ul li a:hover{
 
 #about-me-h2 {
   text-align: center;
+  line-height: 42px;
   font-size: 30px;
-}
-
-#about-me-content {
-  font-size: 40px;
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
@@ -188,6 +185,62 @@ nav ul li a:hover{
     1px -1px 0 #000,
     -1px 1px 0 #000,
      1px 1px 0 #000;
+}
+
+#about-me-content {
+  text-align: center;
+  font-size: 43px;
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  -webkit-text-stroke: 1px black;
+  color: white;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+#about-me-content-span {
+  font-size: 28px;
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  -webkit-text-stroke: 1px black;
+  color: white;
+  text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+
+}
+
+mark {
+  font-weight: 900;
+  background-color: rgba(207,221,25,0.52);
+  
+}
+
+hr {
+  border: 1px solid black;
 }
 
 /* The Close Button */

@@ -32,6 +32,10 @@ $('html').click(function() {
   $('#about-modal').hide(); 
 });
 
+$('#about-modal-content').click(function(event){
+  event.stopPropagation();
+});
+
 $('#about-trigger').click(function(event){
   $('#about-modal-container').toggle();    
   document.getElementById("resume-modal").style.display = "none";
