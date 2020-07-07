@@ -27,22 +27,35 @@ $('#portmodal-trigger').click(function(event){
     document.getElementById("resume-modal").style.display = "none";
 });
 
+// click anywhere to close [about-me handler]
+$('html').click(function() {
+  $('#about-modal').hide(); 
+});
+
+$('#about-modal-container').click(function(event){
+  event.stopPropagation();
+});
+
+$('#about-trigger').click(function(event){
+  $('#about-modal-container').toggle();    
+  document.getElementById("resume-modal").style.display = "none";
+  document.getElementById("myModal").style.display = "none";
+});
+
 //link event listeners
+  document.getElementById("macWallpaper").addEventListener("click", wallpaper2blog);
+
   document.getElementById("portmodal-trigger").addEventListener("mouseover", portfolioHover);
   document.getElementById("portmodal-trigger").addEventListener("mouseout", noPortfolioHover);
-  // document.getElementById("canvas-div").addEventListener("mouseover", handleSS);
-  // document.getElementById("canvas-div").addEventListener("mouseout", noSS);
-  // document.getElementById("my-canvas").addEventListener("mouseover", handleSS);
-  // document.getElementById("my-canvas").addEventListener("mouseout", noSS);
-  document.getElementById("macWallpaper").addEventListener("click", wallpaper2blog);
-  // document.getElementById("trigger").addEventListener("click", linkPopup);
-  document.getElementById("trigger").addEventListener("mouseenter", handleResumeHover);
+  document.getElementById("trigger").addEventListener("mouseenter", resumeHover);
   document.getElementById("trigger").addEventListener("mouseleave", noResumeHover);
   document.getElementById("blog-trigger").addEventListener("mouseenter", handleBlogHover);
   document.getElementById("blog-trigger").addEventListener("mouseleave", noBlogHover);
+  
 
-
-
+  function wallpaper2blog() {    
+    window.open('https://medium.com/me/stories/public', '_blank');
+  }
   
   function portfolioHover() {
     document.getElementById("mini-slideshow-div").style.display = "block";
@@ -53,15 +66,11 @@ $('#portmodal-trigger').click(function(event){
   function noPortfolioHover() {    
     document.getElementById("mini-slideshow-div").style.display = "none";
     document.getElementById("macWallpaper").style.display = "none";
-    document.getElementById("canvas-div").style.display = "block"
+    document.getElementById("canvas-div").style.display = "block";
     // document.getElementById("my-canvas").removeProperty('display');
   }
 
-  function wallpaper2blog() {    
-    window.open('https://medium.com/me/stories/public', '_blank');
-  }
-
-  function handleResumeHover() {
+  function resumeHover() {
     document.getElementById("mini-resume-div").style.display = "block";
     document.getElementById("canvas-div").style.display = "none";
     document.getElementById("macWallpaper").style.display = "block";
@@ -70,7 +79,7 @@ $('#portmodal-trigger').click(function(event){
   function noResumeHover() {    
     document.getElementById("mini-resume-div").style.display = "none";
     document.getElementById("macWallpaper").style.display = "none";
-    document.getElementById("canvas-div").style.display = "block"
+    document.getElementById("canvas-div").style.display = "block";
   }
 
   function handleBlogHover() {
@@ -82,8 +91,11 @@ $('#portmodal-trigger').click(function(event){
   function noBlogHover() {    
     document.getElementById("mini-blog-div").style.display = "none";
     document.getElementById("macWallpaper").style.display = "none";
-    document.getElementById("canvas-div").style.display = "block"
+    document.getElementById("canvas-div").style.display = "block";
   }
+
+
+
 
 
 
@@ -107,7 +119,7 @@ $('#portmodal-trigger').click(function(event){
 
 
 
-// popup modal
+// popup modal (portfolio)
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
@@ -148,10 +160,6 @@ function showSlides(n) {
 }
 
 
-
-
-
-
 // mini-slideshow modal
 var slideIndex1 = 1;
 showSlides1(slideIndex1);
@@ -184,21 +192,25 @@ function showSlides1() {
   setTimeout(showSlides1, 2000);
 }
 
-// function showSlides1(n) {
-//   var i;
-//   var slides1 = document.getElementsByClassName("mini-slides");
-//   var dots1 = document.getElementsByClassName("mini-dot");
-//   if (n > slides1.length) {slideIndex1 = 1}    
-//   if (n < 1) {slideIndex1 = slides1.length}
-//   for (i = 0; i < slides1.length; i++) {
-//       slides1[i].style.display = "none";  
-//   }
-//   for (i = 0; i < dots1.length; i++) {
-//       dots1[i].className = dots1[i].className.replace(" active", "");
-//   }
-//   slides1[slideIndex1-1].style.display = "block";  
-//   dots1[slideIndex1-1].className += " active";
-// }
+
+
+
+// about-page-modal
+let aboutModal = document.getElementById("about-modal");
+let aboutTrigger = document.getElementById("about-trigger");
+let span = document.getElementsByClassName("about-modal-close")[0];
+aboutTrigger.onclick = function() {
+  aboutModal.style.display = "block";
+}
+span.onclick = function() {
+  aboutModal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == aboutModal) {
+    aboutModal.style.display = "none";
+  }
+}
 
 
 
@@ -206,7 +218,7 @@ function showSlides1() {
 
 
 
-// screensaver
+// screensaver particles
 let canvas = document.getElementById("my-canvas")
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
