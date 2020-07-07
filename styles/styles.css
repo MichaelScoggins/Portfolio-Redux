@@ -70,7 +70,7 @@ nav ul li a:hover{
 
 
 /* popup resume */
-#dialog {
+#resume-modal {
   display: none;
   height: 100vh;
   /* width: 200px; */
@@ -88,15 +88,14 @@ nav ul li a:hover{
 
 
 
-* {box-sizing: border-box}
-/* macintosh canvas */
 
+/* macintosh canvas */
 #canvas-div {
   display: block;
 
 }
 
-#my-canvas {
+/* #my-canvas {
   position: absolute;  
   width: 20%;
   height: 20%; 
@@ -104,7 +103,7 @@ nav ul li a:hover{
 
   right: .05%;  
 
-}
+} */
 
 /* #my-canvas {
   display: block;
@@ -135,12 +134,12 @@ nav ul li a:hover{
       top: 1%;
       left: 38%;
       width: 250px;
-      height: 320px;
+      height: 300px;
       /* width: 20%; */
       /* height: 50%; */
       /* border: 1px solid #E5D8BB; */
       background: url(/images/hang-in-there.jpg) no-repeat;
-      background-size: cover;
+      background-size: contain;
       opacity: .5;
       z-index: -1;
       /* box-shadow: 1px 1px 2px #ccc;
@@ -170,7 +169,7 @@ nav ul li a:hover{
 
 
 
-/* popup modal css */
+/* POP-UP MODAL CSS */
 * {
   box-sizing: border-box;
 }
@@ -217,7 +216,6 @@ nav ul li a:hover{
 /* The Close Button */
 .close {
   color: white;
-  /* position: absolute; */
   top: 10px;
   right: 25px;
   font-size: 35px;
@@ -585,7 +583,7 @@ img {vertical-align: middle;}
 
 }
 
-@media screen and (min-width: 1000px) and (min-height: 1200px) {
+@media screen and (max-width: 1900px) and (min-height: 1500px) {
   /* #my-canvas {
     background-color: blue; 
     width: 26.2%;
@@ -599,13 +597,19 @@ img {vertical-align: middle;}
     }
 }
 
-@media (min-aspect-ratio: 2/3) {
+@media screen and (max-width: 1280px) and (min-height: 750px) {
   #my-canvas {
-    /* display: none; */
+    display: none;    
   }
 }
 
-@media screen and (max-width: 1450px) and (min-height: 781px) {
+@media screen and (max-width: 1630px) and (min-height: 950px) {
+  #my-canvas {
+    display: none;    
+  }
+}
+
+@media screen and (max-width: 1590px) and (min-height: 1050px) {
   #my-canvas {
     /* background-color: blue;  */
     width: 26.2%;
@@ -616,7 +620,7 @@ img {vertical-align: middle;}
   }
 
   #my-canvas {
-    /* display: none; */
+    display: none;
   }
   #macWallpaper {
     display: none;
@@ -669,4 +673,10 @@ img {vertical-align: middle;}
     opacity: .5;
     z-index: -1;
     }
+}
+
+@media screen and (max-width: 1326px) and (min-height: 840px) {
+  .cat-img {
+    display: none;    
+  }
 }

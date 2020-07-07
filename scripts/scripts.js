@@ -1,32 +1,35 @@
 // click anywhere to close [resume handler]
 $('html').click(function() {
-    $('#dialog').hide(); 
+    $('#resume-modal').hide(); 
  });
  
  $('li').click(function(event){
-      event.stopPropagation();
+    event.stopPropagation();
  });
  
  $('#trigger').click(function(event){
-      $('#dialog').toggle();
+    $('#resume-modal').toggle();      
+    document.getElementById("myModal").style.display = "none";
+
  });
 
 //  click anywhere to close [portfolio handler]
 $('html').click(function() {
-  $('#myModal').hide(); 
+    $('#myModal').hide(); 
 });
 
 $('#myModal-container').click(function(event){
     event.stopPropagation();
 });
 
-$('#portmodal').click(function(event){
-    $('#myModal').toggle();
+$('#portmodal-trigger').click(function(event){
+    $('#myModal').toggle();    
+    document.getElementById("resume-modal").style.display = "none";
 });
 
 //link event listeners
-  document.getElementById("portmodal").addEventListener("mouseover", handleHover);
-  document.getElementById("portmodal").addEventListener("mouseout", noHover);
+  document.getElementById("portmodal-trigger").addEventListener("mouseover", portfolioHover);
+  document.getElementById("portmodal-trigger").addEventListener("mouseout", noPortfolioHover);
   // document.getElementById("canvas-div").addEventListener("mouseover", handleSS);
   // document.getElementById("canvas-div").addEventListener("mouseout", noSS);
   // document.getElementById("my-canvas").addEventListener("mouseover", handleSS);
@@ -41,13 +44,13 @@ $('#portmodal').click(function(event){
 
 
   
-  function handleHover() {
+  function portfolioHover() {
     document.getElementById("mini-slideshow-div").style.display = "block";
     document.getElementById("canvas-div").style.display = "none";
     document.getElementById("macWallpaper").style.display = "block";
   }
 
-  function noHover() {    
+  function noPortfolioHover() {    
     document.getElementById("mini-slideshow-div").style.display = "none";
     document.getElementById("macWallpaper").style.display = "none";
     document.getElementById("canvas-div").style.display = "block"
@@ -256,7 +259,7 @@ let circleArray = [];
 function init() {
 
   circleArray = [];
-  for (i = 0; i < 200; i++) {
+  for (i = 0; i < 150; i++) {
     let radius = 4;
     let x = Math.random() * (innerWidth - radius * 2) + radius;
     let y = Math.random() * (innerHeight - radius * 2) + radius;
