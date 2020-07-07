@@ -70,6 +70,7 @@ nav ul li a:hover{
 /* macintosh screensaver canvas */
 #canvas-div {
   display: block;
+  /* z-index: 1; */
 }
 /* #my-canvas {
   position: absolute;  
@@ -101,8 +102,24 @@ nav ul li a:hover{
   right: .8%;  
   background: url(/wallpaper2you_259466.jpg) no-repeat;
   background-size: cover;
+  /* z-index: 1; */
   /* overflow: hidden;   */
 }
+
+/* about-page mac preview */
+#mini-about-mac-preview-container {
+  /* display: none; */
+  border-radius: 3px 5px 5px 5px;
+  width: 26%;
+  height: 28%; 
+  position: absolute;
+  bottom: 22.8%;
+  right: 1.2%;  
+  background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
+  background-size: cover;
+
+}
+
 /* hang in there poster */
 .cat-img {
       position: absolute;
@@ -149,7 +166,6 @@ nav ul li a:hover{
 #about-me-h2 {
   text-align: center;
   font-size: 30px;
-
 }
 
 #about-me-content {
@@ -457,6 +473,19 @@ img {vertical-align: middle;}
     overflow: hidden;  
   }
 
+  #mini-about-mac-preview-container {
+    display: none;
+    border-radius: 12px 9px 5px 5px;
+    width: 26.1%;
+    height: 28.4%; 
+    position: absolute;
+    bottom: 22.7%;
+    right: 1.1%; 
+    background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
+    background-size: cover;
+    
+  }
+
 } 
 
 @media (max-aspect-ratio: 9/5) {
@@ -482,6 +511,19 @@ img {vertical-align: middle;}
     background-size: cover;
     overflow: hidden;      
     border-radius: 5px 6px 5px 6px;
+  }
+
+  #mini-about-mac-preview-container {
+    display: none;
+    /* background-color: blue; */
+    width: 26.1%;
+    height: 26.39%; 
+    position: absolute;
+    bottom: 24.1%;
+    right: 1.025%;
+    background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
+    background-size: cover;
+    
   }
 
 } 

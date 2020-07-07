@@ -32,17 +32,13 @@ $('html').click(function() {
   $('#about-modal').hide(); 
 });
 
-$('#about-modal-container').click(function(event){
-  event.stopPropagation();
-});
-
 $('#about-trigger').click(function(event){
   $('#about-modal-container').toggle();    
   document.getElementById("resume-modal").style.display = "none";
   document.getElementById("myModal").style.display = "none";
 });
 
-//link event listeners
+//link/screensaver/wallpaper event listeners
   document.getElementById("macWallpaper").addEventListener("click", wallpaper2blog);
 
   document.getElementById("portmodal-trigger").addEventListener("mouseover", portfolioHover);
@@ -51,6 +47,22 @@ $('#about-trigger').click(function(event){
   document.getElementById("trigger").addEventListener("mouseleave", noResumeHover);
   document.getElementById("blog-trigger").addEventListener("mouseenter", handleBlogHover);
   document.getElementById("blog-trigger").addEventListener("mouseleave", noBlogHover);
+
+  document.getElementById("about-trigger").addEventListener("mouseenter", aboutHover);
+  document.getElementById("about-trigger").addEventListener("mouseleave", noAboutHover);
+
+
+  function aboutHover() {
+    document.getElementById("mini-about-mac-preview-container").style.display = "block";
+    document.getElementById("canvas-div").style.display = "none";
+    // document.getElementById("macWallpaper").style.display = "block";
+  }
+  
+  function noAboutHover() {
+    document.getElementById("mini-about-mac-preview-container").style.display = "none";
+    document.getElementById("canvas-div").style.display = "block";
+    // document.getElementById("macWallpaper").style.display = "block";
+  }
   
 
   function wallpaper2blog() {    
