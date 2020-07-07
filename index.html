@@ -13,38 +13,35 @@
 
   <header class="header-container">       
             <nav>        
-              <ul> 
-                <li>
-                  <a href="#" id="trigger">link</a>
-                  <div id="dialog" style="display: none">
-                    <div>
-                      <iframe src="/HTML5-Canvas-Cheat-Sheet.pdf"></iframe>
-                    </div>
-                  </div>      
-                </li>          
-                <li><a id="portmodal" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Portfolio</a></li>
+              <ul>           
+                <li><a id="portmodal" class="hover-shadow cursor">Portfolio</a></li>
                 <li><a href="/pages/aboutpage.html">About</a></li>
-                <li><a href="/pages/">Résumé</a></li>
-                <li><a href="https://medium.com/me/stories/public" target="_blank">Blog</a></li>
+                <li><a href="#" id="trigger">Résumé</a></li>
+                <li><a href="https://medium.com/me/stories/public" id="blog-trigger" target="_blank">Blog</a></li>
                 <li><a href="/pages/contact-me.html">Contact</a></li>
                 <li><a href="/pages/img-gal.html">Inspiration</a></li>
               </ul>              
             </nav>
-        
+            <!-- onclick="openModal();currentSlide(1)" -->
     </header>
-
 
 
       <div id="canvas-div">
         <canvas id="my-canvas"></canvas>
       </div>
-
-
   
 <!-- <div id="mac-wallpaper-container"> -->
 
       <div id="macWallpaper"></div>
 
+      
+      <!-- <div id="dialog"> -->
+        <!-- <div> -->
+          <iframe id="dialog" src="/resume-sample1.pdf" title="resume" style="border:none;" width="680" height="630"></iframe>
+        <!-- </div> -->
+      <!-- </div>    -->
+
+  <div id="myModal-container">
     <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
@@ -143,7 +140,6 @@
   </div>
 
 
-
     <div class="cat-img">
       <!-- <img src="/images/hang-in-there.jpg" alt=""> -->
     </div>
@@ -190,6 +186,32 @@
     </div>
   </div>
 </div>
+
+
+
+<div id="mini-resume-div">
+
+  <div id="mini-resume-container">
+
+    <div id="mini-resume-slide mini-resume-fade">
+      <!-- <div class="mini-numbertext">1 / 3</div> -->
+      <img id="mini-resume-img" src="/images/mini-resume.jpg">
+    </div>
+  </div>
+</div>
+
+<div id="mini-blog-div">
+
+  <div id="mini-blog-container">
+
+    <div id="mini-blog-slide mini-blog-fade">
+      <!-- <div class="mini-numbertext">1 / 3</div> -->
+      <img id="mini-blog-img" src="/images/mini-blog.jpg">
+    </div>
+  </div>
+</div>
+
+
 
 
 

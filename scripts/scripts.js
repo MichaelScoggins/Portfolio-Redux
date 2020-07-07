@@ -1,11 +1,5 @@
-
-  // $(document).ready(function() {
-  //   $('#trigger').click(function(){
-  //     $("#dialog").dialog();      
-  //   }); 
-  // });    
-
-  $('html').click(function() {
+// click anywhere to close [resume handler]
+$('html').click(function() {
     $('#dialog').hide(); 
  });
  
@@ -17,7 +11,20 @@
       $('#dialog').toggle();
  });
 
-//event listeners
+//  click anywhere to close [portfolio handler]
+$('html').click(function() {
+  $('#myModal').hide(); 
+});
+
+$('#myModal-container').click(function(event){
+    event.stopPropagation();
+});
+
+$('#portmodal').click(function(event){
+    $('#myModal').toggle();
+});
+
+//link event listeners
   document.getElementById("portmodal").addEventListener("mouseover", handleHover);
   document.getElementById("portmodal").addEventListener("mouseout", noHover);
   // document.getElementById("canvas-div").addEventListener("mouseover", handleSS);
@@ -26,6 +33,10 @@
   // document.getElementById("my-canvas").addEventListener("mouseout", noSS);
   document.getElementById("macWallpaper").addEventListener("click", wallpaper2blog);
   // document.getElementById("trigger").addEventListener("click", linkPopup);
+  document.getElementById("trigger").addEventListener("mouseenter", handleResumeHover);
+  document.getElementById("trigger").addEventListener("mouseleave", noResumeHover);
+  document.getElementById("blog-trigger").addEventListener("mouseenter", handleBlogHover);
+  document.getElementById("blog-trigger").addEventListener("mouseleave", noBlogHover);
 
 
 
@@ -42,34 +53,39 @@
     document.getElementById("canvas-div").style.display = "block"
     // document.getElementById("my-canvas").removeProperty('display');
   }
+
   function wallpaper2blog() {    
     window.open('https://medium.com/me/stories/public', '_blank');
   }
 
-  // function linkPopup() {
-    // document.getElementById("dialog").style.display = "block";
-    // document.getElementById("body").addEventListener("click", function(){
-    //   document.getElementById("dialog").style.display = "none"
-    //   });
-  // }
+  function handleResumeHover() {
+    document.getElementById("mini-resume-div").style.display = "block";
+    document.getElementById("canvas-div").style.display = "none";
+    document.getElementById("macWallpaper").style.display = "block";
+  }
+
+  function noResumeHover() {    
+    document.getElementById("mini-resume-div").style.display = "none";
+    document.getElementById("macWallpaper").style.display = "none";
+    document.getElementById("canvas-div").style.display = "block"
+  }
+
+  function handleBlogHover() {
+    document.getElementById("mini-blog-div").style.display = "block";
+    document.getElementById("canvas-div").style.display = "none";
+    document.getElementById("macWallpaper").style.display = "block";
+  }
+
+  function noBlogHover() {    
+    document.getElementById("mini-blog-div").style.display = "none";
+    document.getElementById("macWallpaper").style.display = "none";
+    document.getElementById("canvas-div").style.display = "block"
+  }
 
 
-  // function handleSS() {
-  //   var myobj = document.getElementById("my-canvas");
-  //     myobj.remove(); 
-  //   // document.getElementById("my-canvas").style.display = "none";
-  //   // document.getElementById("canvas-div").style.display = "none";
-  //   document.getElementById("macWallpaper").style.display = "block";
-  // }
 
-  // function noSS() {
-  //   var myobj = document.getElementById("my-canvas");
-  //     myobj.add(); 
-  //   document.getElementById("canvas-div").style.display = "block";
-  //   document.getElementById("my-canvas").style.display = "block";
-  //   document.getElementById("macWallpaper").style.display = "none";
-  // }
 
+  // screensaver hover effect
   $(document).ready(function(){
     var x;
     $("#my-canvas").mouseover(function(){
