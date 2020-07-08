@@ -29,10 +29,10 @@ $('#portmodal-trigger').click(function(event){
 
 // click anywhere to close [about-me handler]
 $('html').click(function() {
-  $('#about-modal').hide(); 
+  $('#about-modal-container').hide(); 
 });
 
-$('#about-modal-content').click(function(event){
+$('#about-modal').click(function(event){
   event.stopPropagation();
 });
 
@@ -243,7 +243,7 @@ function showSlides1() {
 
 
 // about-page-modal
-let aboutModal = document.getElementById("about-modal");
+let aboutModal = document.getElementById("about-modal-container");
 let aboutTrigger = document.getElementById("about-trigger");
 let aboutSpan = document.getElementsByClassName("about-modal-close")[0];
 aboutTrigger.onclick = function() {

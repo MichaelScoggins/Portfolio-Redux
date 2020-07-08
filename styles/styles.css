@@ -174,7 +174,7 @@ nav{
 }
 
 /* Modal Content/Box */
-#about-modal-content {
+#about-modal {
   background-color: #fefefe;
   margin: 0% auto; /* 15% from the top and centered */
   padding: 20px;
