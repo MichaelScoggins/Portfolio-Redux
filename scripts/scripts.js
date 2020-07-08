@@ -56,17 +56,34 @@ $('#about-trigger').click(function(event){
   document.getElementById("contact-trigger").addEventListener("mouseenter", contactHover);
   document.getElementById("contact-trigger").addEventListener("mouseleave", noContactHover);
 
+
+  document.getElementById("inspiration-trigger").addEventListener("mouseenter", inspirationHover);
+  document.getElementById("inspiration-trigger").addEventListener("mouseleave", noInspirationHover);  
+
+
+  function inspirationHover() {
+    document.getElementById("mini-inspiration-mac-preview-container").style.display = "block";
+    document.getElementById("canvas-div").style.display = "none";
+  }
+  
+  function noInspirationHover() {
+    document.getElementById("mini-inspiration-mac-preview-container").style.display = "none";
+    document.getElementById("canvas-div").style.display = "block";
+  }
+
+
   
 
 
 
   function aboutHover() {
-    document.getElementById("mini-about-mac-preview-container").style.display = "block";
+    document.getElementById("mini-about-me-div").style.display = "block";
     document.getElementById("canvas-div").style.display = "none";
+    document.getElementById("macWallpaper").style.display = "block";
   }
   
   function noAboutHover() {
-    document.getElementById("mini-about-mac-preview-container").style.display = "none";
+    document.getElementById("mini-about-me-div").style.display = "none";
     document.getElementById("canvas-div").style.display = "block";
   }
   
