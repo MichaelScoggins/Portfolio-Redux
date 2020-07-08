@@ -280,6 +280,7 @@ hr {
 }
 
 .contact-icons li {  
+  color: black;
   opacity: .6;
 }
 
@@ -289,13 +290,19 @@ hr {
   opacity: 1;
 }
 
+.contact-icons a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 /* email tooltip */
-#tooltip {
+#tooltip, #tooltip1, #tooltip2, #tooltip3 {
   position: relative;
   font-size: 40px;
   display: inline-block;
   /* border-bottom: 1px dotted black; */
 }
+
 
 .tooltiptext {
   visibility: hidden;
@@ -310,12 +317,74 @@ hr {
 
   /* Position the tooltip */
   position: absolute;
-  top: -5px;
-  left: 105%;
-  z-index: 3;
+  top: 40px;
+  left: 0%;
+  z-index: 2;
+}
+
+.tooltiptext1 {
+  visibility: hidden;
+  font-size: 25px;
+  width: 190px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;  
+  line-height: 34px;
+  /* padding: 5px 0; */
+
+  /* Position the tooltip */
+  position: absolute;
+  top: 40px;
+  left: 0%;
+  z-index: 2;
+}
+
+.tooltiptext2 {
+  visibility: hidden;
+  font-size: 25px;
+  width: 450px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;  
+  line-height: 34px;
+  
+  position: absolute;
+  top: 40px;
+  left: 0%;
+  z-index: 2;
+}
+
+.tooltiptext3 {
+  visibility: hidden;
+  font-size: 25px;
+  width: 320px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;  
+  line-height: 34px;
+  
+  position: absolute;
+  top: 40px;
+  left: 0%;
+  z-index: 2;
 }
 
 #tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#tooltip1:hover .tooltiptext1 {
+  visibility: visible;
+}
+
+#tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+}
+
+#tooltip3:hover .tooltiptext3 {
   visibility: visible;
 }
 
