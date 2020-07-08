@@ -52,19 +52,22 @@ $('#about-trigger').click(function(event){
   document.getElementById("blog-trigger").addEventListener("mouseenter", handleBlogHover);
   document.getElementById("blog-trigger").addEventListener("mouseleave", noBlogHover);
   document.getElementById("about-trigger").addEventListener("mouseenter", aboutHover);
-  document.getElementById("about-trigger").addEventListener("mouseleave", noAboutHover);
+  document.getElementById("about-trigger").addEventListener("mouseleave", noAboutHover);  
+  document.getElementById("contact-trigger").addEventListener("mouseenter", contactHover);
+  document.getElementById("contact-trigger").addEventListener("mouseleave", noContactHover);
+
+  
+
 
 
   function aboutHover() {
     document.getElementById("mini-about-mac-preview-container").style.display = "block";
     document.getElementById("canvas-div").style.display = "none";
-    // document.getElementById("macWallpaper").style.display = "block";
   }
   
   function noAboutHover() {
     document.getElementById("mini-about-mac-preview-container").style.display = "none";
     document.getElementById("canvas-div").style.display = "block";
-    // document.getElementById("macWallpaper").style.display = "block";
   }
   
 
@@ -107,6 +110,18 @@ $('#about-trigger').click(function(event){
     document.getElementById("mini-blog-div").style.display = "none";
     document.getElementById("macWallpaper").style.display = "none";
     document.getElementById("canvas-div").style.display = "block";
+  }
+
+  function contactHover() {
+    document.getElementById("mini-contact-me-div").style.display = "block";
+    document.getElementById("canvas-div").style.display = "none";
+    document.getElementById("macWallpaper").style.display = "block";
+  }
+
+  function noContactHover() {
+    document.getElementById("mini-contact-me-div").style.display = "none";
+    document.getElementById("canvas-div").style.display = "block";
+    document.getElementById("macWallpaper").style.display = "none";
   }
 
 
