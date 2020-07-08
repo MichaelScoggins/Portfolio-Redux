@@ -24,7 +24,7 @@
   <header class="header-container">       
     <nav>        
       <ul class="nav-ul">           
-        <li><a id="portmodal-trigger" class="hover-shadow cursor" onclick="currentSlide(1)">Portfolio</a></li>
+        <li><a id="portmodal-trigger" class="hover-shadow cursor">Portfolio</a></li>
         <li><a id="about-trigger" href="#">About</a></li>
         <li><a id="trigger" href="#">Résumé</a></li>
         <li><a id="blog-trigger" class="tooltip4" href="https://medium.com/me/stories/public" target="_blank">
@@ -115,109 +115,62 @@
     <!-- mac preview for inspiration page -->
       <div id="mini-inspiration-mac-preview-container"></div>
     <!-- portfolio modal -->
-    <div id="myModal-container">
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">      
-          <div class="mySlides">
-            <div class="numbertext">1 / 10</div>
-            <img src="/images/barbershop/bs index.jpg" style="width:100%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">2 / 11</div>
-            <img src="/images/barbershop/bs index responsive.jpg" style="width:60%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">3 / 11</div>
-            <img src="/images/barbershop/bs about.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">4 / 11</div>
-            <img src="/images/barbershop/bs blog.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">5 / 11</div>
-            <img src="/images/barbershop/bs blog ipadjpg.jpg" style="width:60%">
-          </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">6 / 11</div>
-            <img src="/images/barbershop/bs blog responsive.jpg" style="width:60%">
-          </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">7 / 11</div>
-            <img src="/images/barbershop/bs contact.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">8 / 11</div>
-            <img src="/images/barbershop/bs contact responsive.jpg" style="width:60%">
-          </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">9 / 11</div>
-            <img src="/images/barbershop/bs gallery.jpg" style="width:100%">
-          </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">10 / 11</div>
-            <img src="/images/barbershop/bs gallery responsive.jpg" style="width:60%">
-          </div>
 
-          <div class="mySlides">
-            <div class="numbertext">11 / 11</div>
-            <img src="/images/nasa-page.jpg" style="width:100%">
-          </div>
-          
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
 
-          <div class="demobox">
-            <div class="column">
-              <img class="demo cursor" src="/images/barbershop/bs index.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Business With Style.">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="/images/barbershop/bs index responsive.jpg" style="width: 100%" onclick="currentSlide(2)" alt="On all platforms.">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="/images/barbershop/bs about.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Get the word out.">
-            </div>
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="/images/barbershop/bs blog.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Organization is key.">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="/images/barbershop/bs blog ipadjpg.jpg" style="width: 100%" onclick="currentSlide(5)" alt="No matter the media.">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="/images/barbershop/bs blog responsive.jpg" style="width: 100%" onclick="currentSlide(6)" alt="Responsive web design for a mobile world.">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="/images/barbershop/bs contact.jpg" style="width: 100%" onclick="currentSlide(7)" alt="Be Reachable.">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="/images/barbershop/bs contact responsive.jpg" style="width: 100%" onclick="currentSlide(8)" alt="Especially via mobile.">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="/images/barbershop/bs gallery.jpg" style="width: 100%" onclick="currentSlide(9)" alt="Show Off Your Work.">
-              <div class="column">
-                <img class="demo cursor" src="/images/barbershop/bs gallery responsive.jpg" style="width: 100%" onclick="currentSlide(10)" alt="Mobile version.">
-            <div class="column">
-              <img class="demo cursor" src="/images/nasa-page.jpg" style="width: 100%" onclick="currentSlide(11)" alt="NASA Landing Page">
-            </div>
+
+
+    
+
+
+    <div id="parallax-modal-container" class="parallax-modal-class">  
+
+      <div id="parallax-modal">
+        <span class="parallax-modal-close">&times;</span>
+        <div class="bgimg-3">
+          <p class="cat">
+          this is a cat. cats are awesome. not as awesome as dogs. dogs are ruffly 10x awesomer than cats. but then again its a psychedelic cat. a psychedelic cat is cooler than your standard dog. but imagine.... a psychedelic dog! goodbye psychedelic cat, amirite?
+          </p>
+        </div>
+        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+          <h3 style="text-align:center;">Parallax Demo</h3>
+          <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+        </div>
+        
+        <div class="bgimg-2">
+          <div class="caption">
+          <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
           </div>
         </div>
+        
+        <div style="position:relative;">
+          <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+          <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+          </div>
+        </div>
+        
+        <div class="bgimg-3">
+          <div class="caption">
+          <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+          </div>
+        </div>
+        
+        <div style="position:relative;">
+          <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+          <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+          </div>
+        </div>
+        
+        <div class="bgimg-1">
+          <div class="caption">
+          <span class="border">COOL!</span>
+          </div>
+        </div> 
       </div>
     </div>
+
+
+
+    
     <!-- about-me modal -->
     <div id="about-modal-container" class="about-modal-class">
       <div id="about-modal">
