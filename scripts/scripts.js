@@ -51,7 +51,6 @@ $('#about-trigger').click(function(event){
   document.getElementById("trigger").addEventListener("mouseleave", noResumeHover);
   document.getElementById("blog-trigger").addEventListener("mouseenter", handleBlogHover);
   document.getElementById("blog-trigger").addEventListener("mouseleave", noBlogHover);
-
   document.getElementById("about-trigger").addEventListener("mouseenter", aboutHover);
   document.getElementById("about-trigger").addEventListener("mouseleave", noAboutHover);
 
@@ -214,11 +213,11 @@ function showSlides1() {
 // about-page-modal
 let aboutModal = document.getElementById("about-modal");
 let aboutTrigger = document.getElementById("about-trigger");
-let span = document.getElementsByClassName("about-modal-close")[0];
+let aboutSpan = document.getElementsByClassName("about-modal-close")[0];
 aboutTrigger.onclick = function() {
   aboutModal.style.display = "block";
 }
-span.onclick = function() {
+aboutSpan.onclick = function() {
   aboutModal.style.display = "none";
 }
 // When the user clicks anywhere outside of the modal, close it
@@ -228,7 +227,22 @@ window.onclick = function(event) {
   }
 }
 
-
+// contact-page-modal
+let contactModal = document.getElementById("contact-modal-container");
+let contactTrigger = document.getElementById("contact-trigger");
+let contactSpan = document.getElementsByClassName("contact-modal-close")[0];
+contactTrigger.onclick = function() {
+  contactModal.style.display = "block";
+}
+contactSpan.onclick = function() {
+  contactModal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == contactModal) {
+    contactModal.style.display = "none";
+  }
+}
 
 
 

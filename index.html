@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2aa40c98be.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Krona+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,17 +17,18 @@
 
   <header class="header-container">       
     <nav>        
-      <ul>           
+      <ul class="nav-ul">           
         <li><a id="portmodal-trigger" class="hover-shadow cursor">Portfolio</a></li>
         <li><a id="about-trigger" href="#">About</a></li>
         <li><a href="#" id="trigger">Résumé</a></li>
         <li><a href="https://medium.com/me/stories/public" id="blog-trigger" target="_blank">Blog</a></li>
-        <li><a href="/pages/contact-me.html">Contact</a></li>
+        <li><a id="contact-trigger" href="#">Contact</a></li>
         <li><a href="/pages/img-gal.html">Inspiration</a></li>
       </ul>              
     </nav>
             <!-- onclick="openModal();currentSlide(1)" -->
   </header>
+
   <main>
     <div id="canvas-div">
       <canvas id="my-canvas"></canvas>
@@ -197,12 +202,57 @@
           Hi! I'm Michael Scoggins: programmer and web developer. If you have an idea that you need web-ified, let's collaborate!<br><hr><span id="about-me-content-span">I'm learn-ed in <mark>HTML</mark>, <mark>CSS</mark>, <mark>JavaScript</mark>, <mark>Bootstrap</mark>, <mark>JQuery</mark>, and adding to the list every day! I practice and implement daily Front-End design and Back-End design, honing my skills enough to help bring any idea to life.</span></p>
       </div>      
     </div> 
-    <!-- <div id="contact-modal-container" class="contact-modal-class">
+
+
+
+    <div id="contact-modal-container" class="contact-modal-class">
       <div id="contact-modal">
+        <span class="contact-modal-close">&times;</span>
+
+        <ul class="contact-icons">
+          <a href="https://github.com/MichaelScoggins"><li class="fab fa-github"></li></a>
+          <a href="#">
+            <li id="tooltip" class="far fa-envelope">
+            <span class="tooltiptext">mtx28@hotmail.com</span>
+            </li></a>
+          <a href="#"><li class="fas fa-phone-square-alt"></li></a>
+          <a href="https://www.linkedin.com/in/michael-a-scoggins/"><li class="fa fa-linkedin-square"></li></a>
+        </ul>
+        
+        <h1 class="forms-header">
+          LET'S KEEP IN TOUCH
+        </h1>
+        
+        <div class="forms-container">
+
+          
 
 
+          <form class="form" action="results.html" method="GET" enctype="multipart/form-data">
+              <div>
+                <label for="name"></label>
+                <input type="text" name="name" placeholder="NAME" id="name">
+              </div>
+              <!-- <div>
+                  <label for="address"></label>
+                  <input type="text" name="address" placeholder="ADDRESS" id="address">            
+              </div> -->
+              <div>
+                  <label for="email"></label>
+                  <input type="email" name="email" placeholder="EMAIL" id="email">
+              </div>
+              <div>
+                  <label for="phone"></label>
+                  <input type="tel" name="phone" placeholder="PHONE" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="12">
+              </div>
+              <div>
+                <label for="comments"><br></label>
+                <textarea id="comments" name="comments" placeholder="MESSAGE"></textarea>
+              </div>
+              <button class="button" type="submit">SEND</button>
+          </form>
       </div>
-    </div> -->
+    </div>
 <!-- <main> div-end -->
   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
