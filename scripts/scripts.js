@@ -42,6 +42,27 @@ $('#about-trigger').click(function(event){
   document.getElementById("myModal").style.display = "none";
 });
 
+
+
+// click anywhere to close [inspiration handler]
+$('html').click(function() {
+  $('#inspiration-modal-container').hide(); 
+});
+
+$('#inspiration-modal').click(function(event){
+  event.stopPropagation();
+});
+
+$('#inspiration-trigger').click(function(event){
+  $('#inspiration-modal-container').toggle();    
+  document.getElementById("resume-modal").style.display = "none";
+  document.getElementById("myModal").style.display = "none";
+});
+
+
+
+
+
 //link/screensaver/wallpaper event listeners
   document.getElementById("macWallpaper").addEventListener("click", wallpaper2blog);
 
@@ -258,6 +279,27 @@ window.onclick = function(event) {
     aboutModal.style.display = "none";
   }
 }
+
+
+// inspiration-page-modal
+let inspirationModal = document.getElementById("inspiration-modal-container");
+let inspirationTrigger = document.getElementById("inspiration-trigger");
+let inspirationSpan = document.getElementsByClassName("inspiration-modal-close")[0];
+inspirationTrigger.onclick = function() {
+  inspirationModal.style.display = "block";
+}
+inspirationSpan.onclick = function() {
+  inspirationModal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == inspirationModal) {
+    inspirationModal.style.display = "none";
+  }
+}
+
+
+
 
 // contact-page-modal
 let contactModal = document.getElementById("contact-modal-container");
