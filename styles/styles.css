@@ -326,10 +326,6 @@ hr {
 
 
 /* CONTACT MODAL */
-/* #contact-modal-container { */
-  /* display: none; */
-/* } */
-
 .contact-icons {
   font-size: 40px;
   text-align: center;
@@ -351,12 +347,28 @@ hr {
   color: black;
 }
 
-/* email tooltip */
+/* email tooltip + blog navlink tooltip */
 #tooltip, #tooltip1, #tooltip2, #tooltip3 {
   position: relative;
   font-size: 40px;
   display: inline-block;
   /* border-bottom: 1px dotted black; */
+}
+
+.tooltiptext4 {
+  visibility: hidden;
+  font-size: 22px;
+  width: 220px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;  
+  line-height: 39px;
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  z-index: 2;
+
 }
 
 
@@ -420,7 +432,7 @@ hr {
   z-index: 2;
 }
 
-#tooltip:hover .tooltiptext, #tooltip1:hover .tooltiptext1, #tooltip2:hover .tooltiptext2, #tooltip3:hover .tooltiptext3 {
+#tooltip:hover .tooltiptext, #tooltip1:hover .tooltiptext1, #tooltip2:hover .tooltiptext2, #tooltip3:hover .tooltiptext3, .tooltip4:hover .tooltiptext4 {
   visibility: visible;
 }
 
@@ -460,9 +472,7 @@ hr {
   cursor: pointer;
 } 
 
-
-
-
+/* contact form css starts here */
 .forms-header {
   text-align: center;
   width: 460px;
@@ -668,7 +678,14 @@ textarea:focus {
   box-sizing: border-box;
 }
 
-.row > .column {
+.demobox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin: 40px; */
+}
+
+/* .row > .column {
   padding: 0 8px;
 }
 
@@ -676,11 +693,15 @@ textarea:focus {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 .column {
-  float: left;
-  width: 25%;
+  /* float: left; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 30%;
+  padding-bottom: 40px;
 }
 
 /* The Modal (background) */
@@ -780,8 +801,10 @@ textarea:focus {
 
 .caption-container {
   text-align: center;
+  font-size: 15px;
+  font-weight: bold;
   background-color: black;
-  padding: 2px 16px;
+  padding: 1px 16px;
   color: white;
 }
 
@@ -1305,7 +1328,8 @@ img {vertical-align: middle;}
 
   .gallery-text {
     color: white;
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1315,9 +1339,8 @@ img {vertical-align: middle;}
     text-align: center;
   }
 
-  .gallery-delay {
-    animation-delay: 6s;
-    text-align: center;
+  .delay {
+    animation-delay: 20s;
   }
   
   @media screen and (max-width: 800px) {

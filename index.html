@@ -15,18 +15,25 @@
 </head>
 <body id="body">  
 
+
+  <!-- <a href="https://github.com/MichaelScoggins"> -->
+    <!-- <li id="tooltip2" class="fab fa-github"> -->
+    <!-- <span class="tooltiptext2">view my projects hosted on gitHub</span> -->
+    <!-- </li></a> -->
+
   <header class="header-container">       
     <nav>        
       <ul class="nav-ul">           
-        <li><a id="portmodal-trigger" class="hover-shadow cursor">Portfolio</a></li>
+        <li><a id="portmodal-trigger" class="hover-shadow cursor" onclick="currentSlide(1)">Portfolio</a></li>
         <li><a id="about-trigger" href="#">About</a></li>
-        <li><a href="#" id="trigger">Résumé</a></li>
-        <li><a href="https://medium.com/me/stories/public" id="blog-trigger" target="_blank">Blog</a></li>
+        <li><a id="trigger" href="#">Résumé</a></li>
+        <li><a id="blog-trigger" class="tooltip4" href="https://medium.com/me/stories/public" target="_blank">
+          <span class="tooltiptext4">opens in new tab</span>Blog</a></li>
         <li><a id="contact-trigger" href="#">Contact</a></li>
         <li><a id="inspiration-trigger" href="#">Inspiration</a></li>
       </ul>              
     </nav>
-            <!-- onclick="openModal();currentSlide(1)" -->
+            
   </header>
 
   <main>
@@ -111,56 +118,60 @@
     <div id="myModal-container">
       <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-      
+        <div class="modal-content">      
           <div class="mySlides">
             <div class="numbertext">1 / 10</div>
             <img src="/images/barbershop/bs index.jpg" style="width:100%">
           </div>
       
           <div class="mySlides">
-            <div class="numbertext">2 / 10</div>
-            <img src="/images/barbershop/bs index responsive.jpg" style="width:100%">
+            <div class="numbertext">2 / 11</div>
+            <img src="/images/barbershop/bs index responsive.jpg" style="width:60%">
           </div>
       
           <div class="mySlides">
-            <div class="numbertext">3 / 10</div>
+            <div class="numbertext">3 / 11</div>
             <img src="/images/barbershop/bs about.jpg" style="width:100%">
           </div>
           
           <div class="mySlides">
-            <div class="numbertext">4 / 10</div>
-            <img src="/wallpaper2you_259445.jpg" style="width:100%">
+            <div class="numbertext">4 / 11</div>
+            <img src="/images/barbershop/bs blog.jpg" style="width:100%">
           </div>
           
           <div class="mySlides">
-            <div class="numbertext">5 / 10</div>
-            <img src="/il_fullxfull.695947728_2hfk.jpg" style="width:100%">
+            <div class="numbertext">5 / 11</div>
+            <img src="/images/barbershop/bs blog ipadjpg.jpg" style="width:60%">
           </div>
           
           <div class="mySlides">
-            <div class="numbertext">6 / 10</div>
-            <img src="/15999-psychedelic-1920x1200-artistic-wallpaper.jpg" style="width:100%">
+            <div class="numbertext">6 / 11</div>
+            <img src="/images/barbershop/bs blog responsive.jpg" style="width:60%">
           </div>
           
           <div class="mySlides">
-            <div class="numbertext">7 / 10</div>
-            <img src="/889653.png" style="width:100%">
+            <div class="numbertext">7 / 11</div>
+            <img src="/images/barbershop/bs contact.jpg" style="width:100%">
           </div>
           
           <div class="mySlides">
-            <div class="numbertext">8 / 10</div>
-            <img src="/a3854208985_16.jpg" style="width:100%">
+            <div class="numbertext">8 / 11</div>
+            <img src="/images/barbershop/bs contact responsive.jpg" style="width:60%">
           </div>
           
           <div class="mySlides">
-            <div class="numbertext">9 / 10</div>
-            <img src="/da7896d6abe683cec8eae4da1cec5fa8.jpg" style="width:100%">
+            <div class="numbertext">9 / 11</div>
+            <img src="/images/barbershop/bs gallery.jpg" style="width:100%">
           </div>
           
           <div class="mySlides">
-            <div class="numbertext">10 / 10</div>
-            <img src="/Mandel_zoom_00_mandelbrot_set.jpg" style="width:100%">
+            <div class="numbertext">10 / 11</div>
+            <img src="/images/barbershop/bs gallery responsive.jpg" style="width:60%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">11 / 11</div>
+            <img src="/images/nasa-page.jpg" style="width:100%">
           </div>
           
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -175,31 +186,33 @@
               <img class="demo cursor" src="/images/barbershop/bs index.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Business With Style.">
             </div>
             <div class="column">
-              <img class="demo cursor" src="/889653.png" style="width: 100%" onclick="currentSlide(2)" alt="Snow">
+              <img class="demo cursor" src="/images/barbershop/bs index responsive.jpg" style="width: 100%" onclick="currentSlide(2)" alt="On all platforms.">
             </div>
             <div class="column">
-              <img class="demo cursor" src="/tumblr_m4mv8p86VY1rnk9soo1_1280.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+              <img class="demo cursor" src="/images/barbershop/bs about.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Get the word out.">
+            </div>
             </div>
             <div class="column">
-              <img class="demo cursor" src="/a3854208985_16.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Northern Lights">
+              <img class="demo cursor" src="/images/barbershop/bs blog.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Organization is key.">
             </div>
             <div class="column">
-              <img class="demo cursor" src="/Mandel_zoom_00_mandelbrot_set.jpg" style="width: 100%" onclick="currentSlide(5)" alt="Northern Lights">
+              <img class="demo cursor" src="/images/barbershop/bs blog ipadjpg.jpg" style="width: 100%" onclick="currentSlide(5)" alt="No matter the media.">
             </div>
             <div class="column">
-              <img class="demo cursor" src="/Psychedelic-Psychedelic-drawing-www.fluorencia.com_.ar_.jpg" style="width: 100%" onclick="currentSlide(6)" alt="Northern Lights">
+              <img class="demo cursor" src="/images/barbershop/bs blog responsive.jpg" style="width: 100%" onclick="currentSlide(6)" alt="Responsive web design for a mobile world.">
             </div>
             <div class="column">
-              <img class="demo cursor" src="/Psychedelic-Wallpaper-Stock-Images-Desktop.jpg" style="width: 100%" onclick="currentSlide(7)" alt="Northern Lights">
+              <img class="demo cursor" src="/images/barbershop/bs contact.jpg" style="width: 100%" onclick="currentSlide(7)" alt="Be Reachable.">
             </div>
             <div class="column">
-              <img class="demo cursor" src="/da7896d6abe683cec8eae4da1cec5fa8.jpg" style="width: 100%" onclick="currentSlide(8)" alt="Northern Lights">
+              <img class="demo cursor" src="/images/barbershop/bs contact responsive.jpg" style="width: 100%" onclick="currentSlide(8)" alt="Especially via mobile.">
             </div>
             <div class="column">
-              <img class="demo cursor" src="/psychedelic-skull-wide-wallpaper-334029.jpg" style="width: 100%" onclick="currentSlide(9)" alt="Northern Lights">
-            </div>
+              <img class="demo cursor" src="/images/barbershop/bs gallery.jpg" style="width: 100%" onclick="currentSlide(9)" alt="Show Off Your Work.">
+              <div class="column">
+                <img class="demo cursor" src="/images/barbershop/bs gallery responsive.jpg" style="width: 100%" onclick="currentSlide(10)" alt="Mobile version.">
             <div class="column">
-              <img class="demo cursor" src="/wallpaper2you_259445.jpg" style="width: 100%" onclick="currentSlide(10)" alt="Northern Lights">
+              <img class="demo cursor" src="/images/nasa-page.jpg" style="width: 100%" onclick="currentSlide(11)" alt="NASA Landing Page">
             </div>
           </div>
         </div>
@@ -264,8 +277,7 @@
                 <div class="gallery-img-container">
                   <img src="/images/img-gal/jonathan-borba-eOmYW-0Q7jA-unsplash.jpg" class="gallery-img">
                       <div class="gallery-overlay">
-                          <div class="gallery-text"></div>
-                          <div class="gallery-delay animate__animated animate__animated animate__backInLeft gallery-text">“The great thing in this world is not so much where you stand, as in what direction you are moving.” – Oliver Wendell Holmes</div>
+                          <div class="delay animate__animated animate__animated animate__backInLeft gallery-text">“The great thing in this world is not so much where you stand, as in what direction you are moving.” – Oliver Wendell Holmes</div>
                       </div>
                   </div>                  
                       <div class="gallery-img-container">
@@ -402,7 +414,7 @@
           <form class="form" action="results.html" method="GET" enctype="multipart/form-data">
               <div>
                 <label for="name"></label>
-                <input type="text" name="name" placeholder="NAME" id="name">
+                <input type="text" name="name" placeholder="NAME" id="name" required>
               </div>
               <!-- <div>
                   <label for="address"></label>
@@ -410,11 +422,11 @@
               </div> -->
               <div>
                   <label for="email"></label>
-                  <input type="email" name="email" placeholder="EMAIL" id="email">
+                  <input type="email" name="email" placeholder="EMAIL" id="email" required>
               </div>
               <div>
                   <label for="phone"></label>
-                  <input type="tel" name="phone" placeholder="PHONE" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="12">
+                  <input type="tel" name="phone" placeholder="PHONE" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
               </div>
               <div>
                 <label for="comments"><br></label>
