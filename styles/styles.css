@@ -102,8 +102,7 @@ nav{
   right: .8%;  
   background: url(/wallpaper2you_259466.jpg) no-repeat;
   background-size: cover;
-  /* z-index: 1; */
-  /* overflow: hidden;   */
+  opacity: .6;
 }
 /* about-page mac preview */
 #mini-inspiration-mac-preview-container {
@@ -117,6 +116,7 @@ nav{
   right: 1.2%;  
   background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
   background-size: cover;
+  opacity: .6;
 }
 /* hang in there poster */
 .cat-img {
@@ -817,6 +817,7 @@ textarea:focus {
   width: 116%;
   margin-left: -68px;
   margin-top: -2px;
+  opacity: .9;
 }
 
 #mini-blog-container {
@@ -835,6 +836,7 @@ textarea:focus {
 #mini-resume-img {
   width: 58%;
   margin-top: -3px;
+  opacity: .9;
 }
 
 #mini-resume-container {
@@ -855,6 +857,7 @@ textarea:focus {
   width: 95%;
   margin-top: -2px;
   margin-left: -40px;
+  opacity: .9;
 }
 
 #mini-contact-me-container {
@@ -875,6 +878,7 @@ textarea:focus {
   width: 112.1%;
   margin-top: 1px;
   margin-left: -64px;
+  opacity: .9;
 }
 
 #mini-about-me-container {
@@ -900,16 +904,19 @@ textarea:focus {
 .mini-img1 {
   width: 40%;
   margin-left: 24px;
+  opacity: .9;
 }
 
 .mini-img2 {
   width: 60%;
+  opacity: .9;
 
 }
 
 .mini-img3 {
   width: 69%;
   margin-left: -10px;
+  opacity: .9;
 
 }
 
@@ -968,6 +975,7 @@ img {vertical-align: middle;}
     background: url(/wallpaper2you_259466.jpg) no-repeat;
     background-size: cover;
     overflow: hidden;  
+    opacity: .7;
   }
 
   #mini-inspiration-mac-preview-container {
@@ -981,6 +989,7 @@ img {vertical-align: middle;}
     right: .99%; 
     background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
     background-size: cover;
+    opacity: .7;
     
   }
 
@@ -1009,6 +1018,7 @@ img {vertical-align: middle;}
     background-size: cover;
     overflow: hidden;      
     border-radius: 5px 6px 5px 6px;
+    opacity: .7;
   }
 
   #mini-inspiration-mac-preview-container {
@@ -1022,6 +1032,7 @@ img {vertical-align: middle;}
     right: 1.025%;
     background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
     background-size: cover;
+    opacity: .7;
     
   }
 
