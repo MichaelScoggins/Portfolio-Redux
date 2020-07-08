@@ -109,6 +109,7 @@ nav{
 #mini-inspiration-mac-preview-container {
   /* display: none; */
   border-radius: 3px 5px 5px 5px;
+  /* background-color: blue; */
   width: 26%;
   height: 28%; 
   position: absolute;
@@ -247,7 +248,7 @@ nav{
 
 .about-me-content {
   text-align: center;
-  font-size: 43px;
+  font-size: 38px;
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
@@ -971,12 +972,13 @@ img {vertical-align: middle;}
 
   #mini-inspiration-mac-preview-container {
     display: none;
+    /* background-color: blue; */
     border-radius: 12px 9px 5px 5px;
     width: 26.1%;
     height: 28.4%; 
     position: absolute;
-    bottom: 22.7%;
-    right: 1.1%; 
+    bottom: 22%;
+    right: .99%; 
     background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
     background-size: cover;
     
@@ -1015,7 +1017,8 @@ img {vertical-align: middle;}
     width: 26.1%;
     height: 26.39%; 
     position: absolute;
-    bottom: 24.1%;
+    border-radius: 3px 5px 5px 5px;
+    bottom: 23.6%;
     right: 1.025%;
     background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
     background-size: cover;
@@ -1291,7 +1294,7 @@ img {vertical-align: middle;}
 
   .gallery-text {
     color: white;
-    font-size: 14px;
+    font-size: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
