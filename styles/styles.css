@@ -735,25 +735,18 @@ textarea:focus {
 }
 
   
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10 {
   position: relative;
   opacity: 0.85;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  min-height: 800px;
 
 }
 .bgimg-1 {
   background-image: url(/images/barbershop/bs\ index.jpg);
-  min-height: 800px;
-}
-
-.bgimg-1 p {
-  margin-left: 70%;
-  padding-top: 160px;
-  height: 100px;
-  
 }
 
 .bgimg-2 {
@@ -761,137 +754,54 @@ textarea:focus {
   min-height: 400px;
 }
 
-.bgimg-2 p {
-  margin-left: 70%;
-  padding-top: 160px;
-  height: 400px;
-  font-size: 20px;
-  
-}
-
 .bgimg-3 {
   background-image: url(/images/barbershop/bs\ about.jpg);
   min-height: 400px;
 }
 
-.bgimg-3 p {
-  margin-left: 70%;
-  padding-top: 160px;
-  height: 400px;
-  font-size: 20px;
-  
-}
-
 .bgimg-4 {
   background-image: url(/images/barbershop/bs\ blog.jpg);
   color: white;
-  /* text-align: left; */
 }
 
-.bgimg-4 p {
-  margin-left: 70%;
-  padding-top: 160px;
-  height: 400px;
-  font-size: 20px;
-  
-}
-
-.bgimg-5 {
+/* .bgimg-5 {
   background-image: url(/images/barbershop/bs\ blog\ ipadjpg.jpg);
   color: white;
-  /* text-align: left; */
-}
-
-.bgimg-5 p {
-  margin-left: 70%;
-  padding-top: 160px;
-  height: 400px;
-  font-size: 20px;
-  
-}
+} */
 
 .bgimg-6 {
   background-image: url(/images/barbershop/bs\ blog\ responsive.jpg);
   color: white;
-  /* text-align: left; */
 }
 
-.bgimg-6 p {
-  margin-left: 70%;
-  padding-top: 160px;
-  height: 400px;
-  font-size: 20px;
-  
+#responsive-web-caption {
+  font-size: 22px;
+  line-height: 70px;
 }
 
 .bgimg-7 {
   background-image: url(/images/barbershop/bs\ contact.jpg);
   color: white;
-  /* text-align: left; */
-}
-
-.bgimg-7 p {
-  margin-left: 70%;
-  padding-top: 160px;
-  height: 400px;
-  font-size: 20px;
-  
 }
 
 .bgimg-8 {
   background-image: url(/images/barbershop/bs\ contact\ responsive.jpg);
   color: white;
-  /* text-align: left; */
-}
-
-.bgimg-8 p {
-  margin-left: 70%;
-  padding-top: 160px;
-  height: 400px;
-  font-size: 20px;
-  
 }
 
 .bgimg-9 {
   background-image: url(/images/barbershop/bs\ gallery.jpg);
   color: white;
-  /* text-align: left; */
-}
-
-.bgimg-9 p {
-  margin-left: 70%;
-  padding-top: 160px;
-  height: 400px;
-  font-size: 20px;
-  
 }
 
 .bgimg-10 {
-  background-image: url(/images/barbershop/bs\ gallery\ responsive.jpg);
-  color: white;
-  /* text-align: left; */
-}
-
-.bgimg-10 p {
-  margin-left: 70%;
-  padding-top: 160px;
-  height: 400px;
-  font-size: 20px;
-  
-}
-
-.bgimg-11 {
   background-image: url(/images/nasa-page.jpg);
   color: white;
-  /* text-align: left; */
 }
 
-.bgimg-11 p {
-  margin-left: 70%;
-  padding-top: 160px;
-  height: 400px;
-  font-size: 20px;
-  
+#capture-your-audience-caption {
+  font-size: 22px;
+  line-height: 70px;
 }
 
 .caption {
