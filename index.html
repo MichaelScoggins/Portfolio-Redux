@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2aa40c98be.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Krona+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,220 +15,447 @@
 </head>
 <body id="body">  
 
+
+  <!-- <a href="https://github.com/MichaelScoggins"> -->
+    <!-- <li id="tooltip2" class="fab fa-github"> -->
+    <!-- <span class="tooltiptext2">view my projects hosted on gitHub</span> -->
+    <!-- </li></a> -->
+
   <header class="header-container">       
-            <nav>        
-              <ul> 
-                <li>
-                  <a href="#" id="trigger">link</a>
-                  <div id="dialog" style="display: none">
-                    <div>
-                      <iframe src="/HTML5-Canvas-Cheat-Sheet.pdf"></iframe>
-                    </div>
-                  </div>      
-                </li>          
-                <li><a id="portmodal" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Portfolio</a></li>
-                <li><a href="/pages/aboutpage.html">About</a></li>
-                <li><a href="/pages/">Résumé</a></li>
-                <li><a href="https://medium.com/me/stories/public" target="_blank">Blog</a></li>
-                <li><a href="/pages/contact-me.html">Contact</a></li>
-                <li><a href="/pages/img-gal.html">Inspiration</a></li>
-              </ul>              
-            </nav>
-        
-    </header>
-
-
-
-      <div id="canvas-div">
-        <canvas id="my-canvas"></canvas>
-      </div>
-
-
-  
-<!-- <div id="mac-wallpaper-container"> -->
-
-      <div id="macWallpaper"></div>
-
-    <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-      <div class="modal-content">
-    
-        <div class="mySlides">
-          <div class="numbertext">1 / 10</div>
-          <img src="/images/barbershop/bs index.jpg" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-          <div class="numbertext">2 / 10</div>
-          <img src="/images/barbershop/bs index responsive.jpg" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-          <div class="numbertext">3 / 10</div>
-          <img src="/images/barbershop/bs about.jpg" style="width:100%">
-        </div>
-        
-        <div class="mySlides">
-          <div class="numbertext">4 / 10</div>
-          <img src="/wallpaper2you_259445.jpg" style="width:100%">
-        </div>
-        
-        <div class="mySlides">
-          <div class="numbertext">5 / 10</div>
-          <img src="/il_fullxfull.695947728_2hfk.jpg" style="width:100%">
-        </div>
-        
-        <div class="mySlides">
-          <div class="numbertext">6 / 10</div>
-          <img src="/15999-psychedelic-1920x1200-artistic-wallpaper.jpg" style="width:100%">
-        </div>
-        
-        <div class="mySlides">
-          <div class="numbertext">7 / 10</div>
-          <img src="/889653.png" style="width:100%">
-        </div>
-        
-        <div class="mySlides">
-          <div class="numbertext">8 / 10</div>
-          <img src="/a3854208985_16.jpg" style="width:100%">
-        </div>
-        
-        <div class="mySlides">
-          <div class="numbertext">9 / 10</div>
-          <img src="/da7896d6abe683cec8eae4da1cec5fa8.jpg" style="width:100%">
-        </div>
-        
-        <div class="mySlides">
-          <div class="numbertext">10 / 10</div>
-          <img src="/Mandel_zoom_00_mandelbrot_set.jpg" style="width:100%">
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-
-        <div class="demobox">
-          <div class="column">
-            <img class="demo cursor" src="/images/barbershop/bs index.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Business With Style.">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="/889653.png" style="width: 100%" onclick="currentSlide(2)" alt="Snow">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="/tumblr_m4mv8p86VY1rnk9soo1_1280.jpg" style="width: 100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="/a3854208985_16.jpg" style="width: 100%" onclick="currentSlide(4)" alt="Northern Lights">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="/Mandel_zoom_00_mandelbrot_set.jpg" style="width: 100%" onclick="currentSlide(5)" alt="Northern Lights">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="/Psychedelic-Psychedelic-drawing-www.fluorencia.com_.ar_.jpg" style="width: 100%" onclick="currentSlide(6)" alt="Northern Lights">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="/Psychedelic-Wallpaper-Stock-Images-Desktop.jpg" style="width: 100%" onclick="currentSlide(7)" alt="Northern Lights">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="/da7896d6abe683cec8eae4da1cec5fa8.jpg" style="width: 100%" onclick="currentSlide(8)" alt="Northern Lights">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="/psychedelic-skull-wide-wallpaper-334029.jpg" style="width: 100%" onclick="currentSlide(9)" alt="Northern Lights">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="/wallpaper2you_259445.jpg" style="width: 100%" onclick="currentSlide(10)" alt="Northern Lights">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-    <div class="cat-img">
-      <!-- <img src="/images/hang-in-there.jpg" alt=""> -->
-    </div>
-
-
-    <!-- <div class="thumbnail-div"><img id="bs-ipad-tn" src="/images/barbershop/bs about responsive.jpg" alt=""></div> -->
-
-
-
-
-
-
-
-<div id="mini-slideshow-div">
-
-  <div class="mini-slideshow-container">
-
-    <div class="mini-slides mini-fade">
-      <!-- <div class="mini-numbertext">1 / 3</div> -->
-      <img class="mini-img1" src="/images/barbershop/bs about mobile.jpg">
-      <!-- <div class="mini-text"></div> -->
-    </div>
-    
-    <div class="mini-slides mini-fade">
-      <!-- <div class="mini-numbertext">2 / 3</div> -->
-      <img class="mini-img2" src="/images/barbershop/bs about responsive.jpg">
-      <!-- <div class="mini-text"></div> -->
-    </div>
-    
-    <div class="mini-slides mini-fade">
-      <!-- <div class="mini-numbertext">3 / 3</div> -->
-      <img class="mini-img3" src="/images/barbershop/bs gallery.jpg">
-      <!-- <div class="mini-text"></div> -->
-    </div>
-    
-    <!-- <a class="mini-prev" onclick="plusMiniSlides(-1)">&#10094;</a> -->
-    <!-- <a class="mini-next" onclick="plusMiniSlides(1)">&#10095;</a> -->      
-    <!-- </div> -->
-    <!-- <br> -->      
-    <div>
-      <span class="mini-dot" onclick="currentMiniSlide(1)"></span> 
-      <span class="mini-dot" onclick="currentMiniSlide(2)"></span> 
-      <span class="mini-dot" onclick="currentMiniSlide(3)"></span> 
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-    <!-- <main class="main-container">         -->
-        <!-- <img id="main-image" src="/images/coding-vs-programming-2.jpg" alt="coding vs programming"> -->
-        <!-- <p id="main-paragraph"> -->
-            <!-- Hi! I'm Michael Scoggins: programmer and web developer. If you have an idea you need web-ified, let's collaborate! -->
-        <!-- </p> -->
-        <!-- <button id="portfolio">Portfolio</button>    -->
-        <!-- <ul class="contact-info" type:a> -->
+    <nav>        
+      <ul class="nav-ul">           
+        <li><a id="portmodal-trigger" class="hover-shadow cursor">Portfolio</a></li>
+        <li><a id="about-trigger" href="#">About</a></li>
+        <li><a id="trigger" href="#">Résumé</a></li>
+        <li><a id="blog-trigger" class="tooltip4" href="https://medium.com/me/stories/public" target="_blank">
+          <span class="tooltiptext4">opens in new tab</span>Blog</a></li>
+        <li><a id="contact-trigger" href="#">Contact</a></li>
+        <li><a id="inspiration-trigger" href="#">Inspiration</a></li>
+      </ul>              
+    </nav>
             
-            <!-- <a href="#"> <li class="fab fa-twitter-square"></li></a> -->
-            <!-- <a href="#"> <li class="fab fa-facebook"></li></a> -->
-            <!-- <a href="#"> <li class="fab fa-google-plus-square"></li></a> -->
-            <!-- <a href="#"> <li class="fab fa-pinterest"></li></a> -->
-            <!-- <a class="li">832-330-7783<br></a> -->
-            <!-- <a mailto:mtx28@hotmail.com> <li class="fas fa-envelope-square"></li></a> -->
-            <!-- <a class="li" href="https://www.linkedin.com/in/michael-a-scoggins/">LinkedIn<br></a> -->
-        <!-- </ul> -->
-    <!-- </main> -->
-    <!-- <footer class="footer-container"> -->
-        <!-- <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a> -->
-    <!-- </footer> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://kit.fontawesome.com/2aa40c98be.js" crossorigin="anonymous"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
-    <script src="/scripts/scripts.js"></script>
+  </header>
+
+  <main>
+    <div id="canvas-div">
+      <canvas id="my-canvas"></canvas>
+    </div>      
+    <div id="macWallpaper"></div>
+    <iframe id="resume-modal" src="/resume-sample1.pdf" title="resume" style="border:none;" width="680" height="630"></iframe>
+    <div class="cat-img">
+    </div>
+  <!-- mac mini-preview elements -->
+    <div id="mini-slideshow-div">
+
+      <div class="mini-slideshow-container">
+
+        <div class="mini-slides mini-fade">
+          <!-- <div class="mini-numbertext">1 / 3</div> -->
+          <img class="mini-img1" src="/images/barbershop/bs about mobile.jpg">
+          <!-- <div class="mini-text"></div> -->
+        </div>
+        
+        <div class="mini-slides mini-fade">
+          <!-- <div class="mini-numbertext">2 / 3</div> -->
+          <img class="mini-img2" src="/images/barbershop/bs about responsive.jpg">
+          <!-- <div class="mini-text"></div> -->
+        </div>
+        
+        <div class="mini-slides mini-fade">
+          <!-- <div class="mini-numbertext">3 / 3</div> -->
+          <img class="mini-img3" src="/images/barbershop/bs gallery.jpg">
+          <!-- <div class="mini-text"></div> -->
+        </div>
+        
+        <!-- <a class="mini-prev" onclick="plusMiniSlides(-1)">&#10094;</a> -->
+        <!-- <a class="mini-next" onclick="plusMiniSlides(1)">&#10095;</a> -->      
+        <!-- </div> -->
+        <!-- <br> -->      
+        <div>
+          <span class="mini-dot" onclick="currentMiniSlide(1)"></span> 
+          <span class="mini-dot" onclick="currentMiniSlide(2)"></span> 
+          <span class="mini-dot" onclick="currentMiniSlide(3)"></span> 
+        </div>
+      </div>
+    </div>
+    <!-- mac preview for resume -->
+    <div id="mini-resume-div">
+      <div id="mini-resume-container">
+        <div id="mini-resume-slide mini-resume-fade">
+          <!-- <div class="mini-numbertext">1 / 3</div> -->
+          <img id="mini-resume-img" src="/images/mini-resume.jpg">
+        </div>
+      </div>
+    </div>
+    <!-- mac preview for blog -->
+    <div id="mini-blog-div">
+      <div id="mini-blog-container">
+        <div id="mini-blog-slide mini-blog-fade">
+          <!-- <div class="mini-numbertext">1 / 3</div> -->
+          <img id="mini-blog-img" src="/images/mini-blog.jpg">
+        </div>
+      </div>
+    </div>
+    <!-- mac preview for contact-me -->
+    <div id="mini-contact-me-div">
+      <div id="mini-contact-me-container">
+        <div id="mini-contact-me-slide mini-contact-me-fade">
+          <img id="mini-contact-me-img" src="/images/mini-contact-me.jpg">
+        </div>
+      </div>
+    </div>
+    <!-- mac preview for about-me -->
+    <div id="mini-about-me-div">
+      <div id="mini-about-me-container">
+        <div id="mini-about-me-slide mini-contact-me-fade">
+          <img id="mini-about-me-img" src="/images/mini-about-me.jpg">
+        </div>
+      </div>
+    </div>      
+    <!-- mac preview for inspiration page -->
+      <div id="mini-inspiration-mac-preview-container"></div>
+    <!-- portfolio modal -->
+    
+
+
+    <div id="parallax-modal-container" class="parallax-modal-class">  
+
+      <div id="parallax-modal">
+      <span class="parallax-modal-close">&times;</span>
+
+        <div id="parallax">
+
+          <div class="bgimg-1">
+            <div class="caption">
+            <span class="border">Business With Style.</span>
+            </div>
+          </div>
+      
+          <div style="position:relative;">
+            <div class="parallax-caption-with-border">
+            <p>Websites with a clean look and feel.</p>
+            </div>
+          </div>
+          
+          <div class="bgimg-2">
+            <div class="caption">
+            <span class="border">On all platforms.</span>
+            </div>
+          </div>
+      
+          <div style="position:relative;">
+            <div class="parallax-caption-with-border">
+            <p>Make sure everyone can view your website, whether it's on a computer, tablet, or phone.</p>
+            </div>
+          </div>
+          
+          <div class="bgimg-3">
+            <div class="caption">
+            <span class="border">Get the word out!</span>
+            </div>
+          </div>
+      
+          <div style="position:relative;">
+            <div class="parallax-caption-with-border">
+            <p>Expand your vision to an audience you didn't even know you had.</p>
+            </div>
+          </div>
+
+          <!-- <div class="bgimg-4">
+            <div class="caption">
+            <span class="border">Organization is key</span>
+            </div>
+          </div>
+      
+          <div style="position:relative;">
+            <div class="parallax-caption-with-border">
+            <p>Expand your vision to an audience you didn't even know you had.</p>
+            </div>
+          </div> -->
+          
+          <!-- <div class="bgimg-5">
+            <div class="caption">
+            <span class="border">No matter the media.</span>
+            </div>
+          </div> -->
+
+          <div class="bgimg-6">
+            <div class="caption">
+            <span class="border" id="responsive-web-caption">Responsive web design <br>&nbsp;for a mobile world.</span>
+            </div>
+          </div>
+      
+          <div style="position:relative;">
+            <div class="parallax-caption-with-border">
+            <p>Get that clean look and feel across all platforms.</p>
+            </div>
+          </div>
+
+          <div class="bgimg-7">
+            <div class="caption">
+            <span class="border">Be Reachable!</span>
+            </div>
+          </div>
+      
+          <div style="position:relative;">
+            <div class="parallax-caption-with-border">
+            <p>Easily attract potential Clientele.</p>
+            </div>
+          </div>
+
+          <div class="bgimg-8">
+            <div class="caption">
+            <span class="border">Especially via mobile.</span>
+            </div>
+          </div>
+
+          <div class="bgimg-9">
+            <div class="caption">
+            <span class="border">Show Off Your Work!</span>
+            </div>
+          </div>
+      
+          <div style="position:relative;">
+            <div class="parallax-caption-with-border">
+            <p>I design with your content in mind. Keep your viewer's eyes on the product.</p>
+            </div>
+          </div>
+
+          <div class="bgimg-10">
+            <div class="caption">
+            <span class="border" id="capture-your-audience-caption">Capture your audience with an<br>&nbsp;eye-catching landing page.</span>
+            </div>
+          </div>
+
+
+        </div> 
+      </div>
+    </div>
+
+
+
+    
+    <!-- about-me modal -->
+    <div id="about-modal-container" class="about-modal-class">
+      <div id="about-modal">
+        <span class="about-modal-close">&times;</span>
+        <h2 class="about-me-h2"><mark>Michael Scoggins</mark><br><mark>Student of Web Development</mark></h2>
+          <p class="about-me-content">
+          Hi! I'm Michael Scoggins: programmer and web developer. If you have an idea that you need web-ified, let's collaborate!<br><hr><span class="about-me-content-span">I'm practiced in <mark>HTML</mark>, <mark>CSS</mark>, <mark>JavaScript</mark>, <mark>Bootstrap</mark>, <mark>JQuery</mark>, and adding to the list every day! I practice and implement daily Front-End design and Back-End design, honing my skills enough to help bring any idea to life.</span></p>
+      </div>      
+    </div> 
+    <!-- inspiration modal -->
+    <div id="inspiration-modal-container" class="inspiration-modal-class">
+      <div id="inspiration-modal">
+        <span class="inspiration-modal-close">&times;</span>
+        <h2 class="inspiration-modal-h2"><mark>My</mark><mark>Inspiration</mark></h2>
+<!-- injected gallery starts here -->
+        <main class="gallery">
+          <div class="gallery-row">
+              <div class="gallery-column">
+                  <div class="gallery-img-container">
+                  <img src="/images/img-gal/be-like-water.jpg" class="gallery-img">
+                      <div class="gallery-overlay">
+                          <div class="gallery-text">“Be not afraid of life. Believe that life is worth living, and your belief will help create the fact.” – William James</div>
+                      </div>
+                  </div>
+                  <div class="gallery-img-container">
+                      <img src="/images/img-gal/alexander-ant-aHPMqdOQfnY-unsplash.jpg" class="gallery-img">
+                          <div class="gallery-overlay">
+                              <div class="gallery-text">“I am not a product of my circumstances. I am a product of my decisions.” – Stephen Covey</div>
+                          </div>
+                      </div>
+                  <div class="gallery-img-container">
+                      <img src="/images/img-gal/alvan-nee-ZCHj_2lJP00-unsplash.jpg" class="gallery-img">
+                          <div class="gallery-overlay">
+                              <div class="gallery-text">“Our lives begin to end the day we become silent about things that matter.” – Martin Luther King Jr.</div>
+                          </div>
+                      </div>
+                  <div class="gallery-img-container">
+                      <img src="/images/img-gal/andrew-sterling-X55nQCPBz1M-unsplash.jpg" class="gallery-img">
+                          <div class="gallery-overlay">
+                              <div class="gallery-text">“When I let go of what I am, I become what I might be.” – Lao Tzu</div>
+                          </div>
+                      </div>
+                  <div class="gallery-img-container">
+                      <img src="/images/img-gal/brandon-atchison-_DzW3MT-iIY-unsplash.jpg" class="gallery-img">
+                          <div class="gallery-overlay">
+                              <div class="gallery-text">“Even if you’re on the right track, you’ll get run over if you just sit there.” – Will Rogers</div>
+                          </div>
+                      </div>
+                  <div class="gallery-img-container">
+                      <img src="/images/img-gal/clemence-bergougnoux-u2DXlEeXLZs-unsplash.jpg" class="gallery-img">
+                          <div class="gallery-overlay">
+                              <div class="gallery-text">“Nurture your mind with great thoughts. To believe in the heroic makes heroes.” – Benjamin Disraeli</div>
+                          </div>
+                      </div>
+              </div>
+              <div class="gallery-column">
+                <div class="gallery-img-container">
+                  <img src="/images/img-gal/jonathan-borba-eOmYW-0Q7jA-unsplash.jpg" class="gallery-img">
+                      <div class="gallery-overlay">
+                          <div class="delay animate__animated animate__animated animate__backInLeft gallery-text">“The great thing in this world is not so much where you stand, as in what direction you are moving.” – Oliver Wendell Holmes</div>
+                      </div>
+                  </div>                  
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/elia-pellegrini-MSpFr8sETjc-unsplash.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">Cool Lens Flare, isn't it?</div>
+                              </div>
+                          </div>
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/gerson-repreza-SOoknM9qfFc-unsplash.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“The great thing in this world is not so much where you stand, as in what direction you are moving.” – Oliver Wendell Holmes</div>
+                              </div>
+                          </div>
+                          <div class="gallery-img-container">
+                            <img src="/images/img-gal/daniel-j-schwarz-L50EwWmAY2w-unsplash.jpg" class="gallery-img">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-text">“An obstacle is often a stepping stone.” – Prescott</div>
+                                </div>
+                            </div>                      
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/jonathan-borba-Id4Hvej_w7k-unsplash.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“Look at the sparrows; they do not know what they will do in the next moment. Let us literally live from moment to moment.” – Mahatma Gandhi</div>
+                              </div>
+                          </div>
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/lachlan-gowen-FV38U8c0RdQ-unsplash.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“When I hear somebody sigh, ‘Life is hard,’ I am always tempted to ask, ‘Compared to what?’” – Sydney Harris</div>
+                              </div>
+                          </div>                
+              </div>
+              <div class="gallery-column">
+                  <div class="gallery-img-container">
+                      <img src="/images/img-gal/li-lin-qhWCuvsA00s-unsplash.jpg" class="gallery-img">
+                          <div class="gallery-overlay">
+                              <div class="gallery-text">“Courage is the first of human qualities because it is the quality which guarantees all others.”– Winston Churchill</div>
+                          </div>
+                      </div>
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/luemen-carlson-Eaj5Y86hmao-unsplash.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“We become what we think about.” – Earl Nightingale</div>
+                              </div>
+                          </div>
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/morgan-richardson-XUXgHmUtUJQ-unsplash.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“Some men see things as they are and say why – I dream things that never were and say why not.”– George Bernard Shaw</div>
+                              </div>
+                          </div>
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/nathan-dumlao-GB5wswKJ_yE-unsplash.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“Eighty percent of success is showing up.” – Woody Allen</div>
+                              </div>
+                          </div>
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/pawel-czerwinski-FNKyAaL5bkc-unsplash.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“You may find the worst enemy or best friend in yourself.” – English Proverb</div>
+                              </div>
+                          </div>
+              </div>
+              <div class="gallery-column">
+                  <div class="gallery-img-container">
+                      <img src="/images/img-gal/quino-al-5WMkrgjCzFo-unsplash.jpg" class="gallery-img">
+                          <div class="gallery-overlay">
+                              <div class="gallery-text">“Some men see things as they are and say why – I dream things that never were and say why not.”– George Bernard Shaw</div>
+                          </div>
+                      </div>
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/raphael-nast-oyjyXFmTV5o-unsplash.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“The only way of finding the limits of the possible is by going beyond them into the impossible.” – Arthur C. Clarke</div> l
+                              </div>
+                          </div>
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/secluded-lodge.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“Rule #1 of life. Do what makes YOU happy.” – Unknown</div>
+                              </div>
+                          </div>
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/silas-peters-Fp4oznmFI2k-unsplash.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“Nurture your mind with great thoughts. To believe in the heroic makes heroes.” – Benjamin Disraeli</div>
+                              </div>
+                          </div>
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/stuart-davies-aKbcDhr7eI0-unsplash.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“Do not go where the path may lead, go instead where there is no path and leave a trail.” – Ralph Waldo Emerson</div>
+                              </div>
+                          </div>
+                      <div class="gallery-img-container">
+                          <img src="/images/img-gal/teddy-guerrier--7gLoC2xARM-unsplash.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“Luck is a dividend of sweat. The more you sweat, the luckier you get.” – Ray Kroc</div>
+                              </div>
+                  </div>
+              </div>
+          </div>
+<!-- injected gallery ends here -->
+      </div>      
+    </div> 
+<!-- contact-modal html starts here i think -->
+    <div id="contact-modal-container" class="contact-modal-class">
+      <div id="contact-modal">
+      <span class="contact-modal-close">&times;</span>
+        <ul class="contact-icons">
+          <a href="https://github.com/MichaelScoggins">
+            <li id="tooltip2" class="fab fa-github">
+            <span class="tooltiptext2">view my projects hosted on gitHub</span>
+            </li></a>
+          <a href="mailto:mtx28@hotmail.com">
+            <li id="tooltip" class="far fa-envelope">
+            <span class="tooltiptext">mtx28@hotmail.com</span>
+            </li></a>
+          <a href="#">
+            <li id="tooltip1" class="fas fa-phone-square-alt">
+            <span class="tooltiptext1">832-330-7783</span>
+            </li></a>
+          <a href="https://www.linkedin.com/in/michael-a-scoggins/">
+            <li id="tooltip3" class="fa fa-linkedin-square">
+            <span class="tooltiptext3">add me to your network</span>
+            </li></a>
+        </ul>        
+        <h1 class="forms-header">
+          LET'S KEEP IN TOUCH
+        </h1>        
+        <div class="forms-container">
+          <form class="form" action="results.html" method="GET" enctype="multipart/form-data">
+              <div>
+                <label for="name"></label>
+                <input type="text" name="name" placeholder="NAME" id="name" required>
+              </div>
+              <!-- <div>
+                  <label for="address"></label>
+                  <input type="text" name="address" placeholder="ADDRESS" id="address">            
+              </div> -->
+              <div>
+                  <label for="email"></label>
+                  <input type="email" name="email" placeholder="EMAIL" id="email" required>
+              </div>
+              <div>
+                  <label for="phone"></label>
+                  <input type="tel" name="phone" placeholder="PHONE" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
+              </div>
+              <div>
+                <label for="comments"><br></label>
+                <textarea id="comments" name="comments" placeholder="What's your endgame, pal?"></textarea>
+              </div>
+              <button class="button" type="submit">SEND</button>
+          </form>
+      </div>
+    </div>
+<!-- <main> div-end -->
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+<script src="/scripts/scripts.js"></script>
 </body>
 </html>

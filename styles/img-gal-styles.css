@@ -1,4 +1,4 @@
-body {
+.gallery-body {
   background-color: lightgoldenrodyellow;
 }
 
@@ -31,7 +31,8 @@ body {
   /* height: 300px; */
 }
 
-.navbar {
+.gallery-navbar {
+  /* display: none; */
   grid-area: nav;
   display: flex;
   justify-content: space-evenly;
@@ -41,12 +42,12 @@ body {
   font-size: 13px;
 }
 
-.navbar a:link {
+.gallery-navbar a:link {
   text-decoration: none;
   color: black
 }
 
-.navbar a:hover {
+.gallery-navbar a:hover {
   color: lightseagreen;
 }
 
@@ -54,7 +55,7 @@ body {
   color: orange;
 }
 
-/* .navbar a:visited {
+/* .gallery-navbar a:visited {
   color: inherit;
 } */
 
@@ -74,37 +75,37 @@ body {
 
 
 
-.row {
+.gallery-row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
   }
   
-  .column {
+  .gallery-column {
     flex: 15%;
     max-width: 25%;
     padding: 0 4px;
   }
   
-  .column img {
+  .gallery-column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
     /* max-height: 50% */
   }
 
-  .container {
+  .gallery-img-container {
     position: relative;
     /* width: 50%; */
   }
   
-  .image {
+  .gallery-img {
     display: block;
     width: 100%;
     height: auto;
   }
   
-  .overlay {
+  .gallery-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -117,11 +118,11 @@ body {
     background: rgba(0, 0, 0, 0.5);
   }
 
-  .container:hover .overlay {
+  .gallery-img-container:hover .gallery-overlay {
       opacity: 1; 
   }
 
-  .text {
+  .gallery-text {
     color: white;
     font-size: 14px;
     position: absolute;
@@ -133,18 +134,18 @@ body {
     text-align: center;
   }
 
-  .delay {
+  .gallery-delay {
     animation-delay: 6s;
     text-align: center;
   }
   
   @media screen and (max-width: 800px) {
-    .column {
+    .gallery-column {
       flex: 100%;
       max-width: 100%;
     }
 
-    .navbar {
+    .gallery-navbar {
       display: flex;
       flex-wrap: wrap;
   }
@@ -153,18 +154,18 @@ body {
       font-size: 25px;
   }
 
-  .text {
+  .gallery-text {
     font-size: 35px;
   }
 
   }
   
   @media screen and (max-width: 600px) {
-    .column {
+    .gallery-column {
       flex: 100%;
       max-width: 100%;      
     }
-    .text {
+    .gallery-text {
         display: block;
         color: white;
         font-size: 35px;
@@ -174,10 +175,10 @@ body {
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        text-align: center;
+        gallery-text-align: center;
       }
 
-      .navbar {
+      .gallery-navbar {
         display: flex;
         flex-wrap: wrap;
     }
