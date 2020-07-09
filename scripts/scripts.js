@@ -39,10 +39,8 @@ event.stopPropagation();
 $('#about-trigger').click(function(event){
 $('#about-modal-container').toggle();    
 document.getElementById("resume-modal").style.display = "none";
-document.getElementById("myModal").style.display = "none";
+document.getElementById("parallax-modal-container").style.display = "none";
 });
-
-
 
 // click anywhere to close [inspiration handler]
 $('html').click(function() {
@@ -60,9 +58,6 @@ document.getElementById("myModal").style.display = "none";
 });
 
 
-
-
-
 //link/screensaver/wallpaper event listeners
 document.getElementById("macWallpaper").addEventListener("click", wallpaper2blog);
 
@@ -76,8 +71,6 @@ document.getElementById("about-trigger").addEventListener("mouseenter", aboutHov
 document.getElementById("about-trigger").addEventListener("mouseleave", noAboutHover);  
 document.getElementById("contact-trigger").addEventListener("mouseenter", contactHover);
 document.getElementById("contact-trigger").addEventListener("mouseleave", noContactHover);
-
-
 document.getElementById("inspiration-trigger").addEventListener("mouseenter", inspirationHover);
 document.getElementById("inspiration-trigger").addEventListener("mouseleave", noInspirationHover);  
 
@@ -91,11 +84,6 @@ function noInspirationHover() {
   document.getElementById("mini-inspiration-mac-preview-container").style.display = "none";
   document.getElementById("canvas-div").style.display = "block";
 }
-
-
-
-
-
 
 function aboutHover() {
   document.getElementById("mini-about-me-div").style.display = "block";
@@ -162,12 +150,6 @@ function noContactHover() {
   document.getElementById("macWallpaper").style.display = "none";
 }
 
-
-
-
-
-
-
 // screensaver hover effect
 $(document).ready(function(){
   var x;
@@ -180,52 +162,6 @@ $(document).ready(function(){
     $("#canvas-div").prepend(x);
   });
 });
-
-
-
-
-
-
-
-// popup modal (portfolio)
-// function openModal() {
-//   document.getElementById("parallax-modal-container").style.display = "block";
-// }
-
-// function closeModal() {
-//   document.getElementById("parallax-modal-container").style.display = "none";
-// }
-
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// document.getElementsByClassName("prev").addEventListener()
-
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("demo");
-//   var captionText = document.getElementById("caption");
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//       dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
-//   captionText.innerHTML = dots[slideIndex-1].alt;
-// }
 
 
 // mini-slideshow modal
@@ -263,6 +199,25 @@ setTimeout(showSlides1, 2000);
 
 
 
+// portfolio parallax modal
+let parallaxModal = document.getElementById("parallax-modal-container");
+let parallaxTrigger = document.getElementById("portmodal-trigger");
+let parallaxSpan = document.getElementsByClassName("parallax-modal-close")[0];
+parallaxTrigger.onclick = function() {
+parallaxModal.style.display = "block";
+}
+parallaxSpan.onclick = function() {
+parallaxModal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == parallaxModal) {
+  parallaxModal.style.display = "none";
+}
+}
+
+
+
 // about-page-modal
 let aboutModal = document.getElementById("about-modal-container");
 let aboutTrigger = document.getElementById("about-trigger");
@@ -279,8 +234,6 @@ if (event.target == aboutModal) {
   aboutModal.style.display = "none";
 }
 }
-
-
 // inspiration-page-modal
 let inspirationModal = document.getElementById("inspiration-modal-container");
 let inspirationTrigger = document.getElementById("inspiration-trigger");
@@ -297,10 +250,6 @@ if (event.target == inspirationModal) {
   inspirationModal.style.display = "none";
 }
 }
-
-
-
-
 // contact-page-modal
 let contactModal = document.getElementById("contact-modal-container");
 let contactTrigger = document.getElementById("contact-trigger");
