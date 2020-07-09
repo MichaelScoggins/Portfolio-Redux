@@ -201,7 +201,11 @@ nav{
 
 
 /* about-page-modal */
- .about-modal-class {
+#about-modal-container {
+  /* display: block; */
+}
+
+.about-modal-class {
   display: none; 
   position: fixed; 
   z-index: 2; 

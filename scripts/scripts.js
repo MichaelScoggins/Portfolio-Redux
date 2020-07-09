@@ -36,11 +36,23 @@ $('#about-modal').click(function(event){
 event.stopPropagation();
 });
 
+$('#macWallpaper').click(function(event){
+  event.stopPropagation();
+  });
+
 $('#about-trigger').click(function(event){
 $('#about-modal-container').toggle();    
 document.getElementById("resume-modal").style.display = "none";
 document.getElementById("parallax-modal-container").style.display = "none";
+document.getElementById("macWallpaper").style.display = "none";
 });
+
+$('#macWallpaper').click(function(event){
+  $('#about-modal-container').toggle();    
+  document.getElementById("resume-modal").style.display = "none";
+  document.getElementById("parallax-modal-container").style.display = "none";
+  document.getElementById("macWallpaper").style.display = "none";
+  });
 
 // click anywhere to close [inspiration handler]
 $('html').click(function() {
@@ -59,7 +71,7 @@ document.getElementById("myModal").style.display = "none";
 
 
 //link/screensaver/wallpaper event listeners
-document.getElementById("macWallpaper").addEventListener("click", wallpaper2blog);
+// document.getElementById("macWallpaper").addEventListener("click", wallpaper2blog);
 
 document.getElementById("portmodal-trigger").addEventListener("mouseover", portfolioHover);
 document.getElementById("portmodal-trigger").addEventListener("mouseout", noPortfolioHover);
@@ -97,9 +109,10 @@ function noAboutHover() {
 }
 
 
-function wallpaper2blog() {    
-  window.open('https://medium.com/me/stories/public', '_blank');
-}
+  // window.open('https://medium.com/me/stories/public', '_blank');
+// function wallpaper2blog() {    
+//   document.getElementById("about-modal-container").style.display = "block";  
+// }
 
 function portfolioHover() {
   document.getElementById("mini-slideshow-div").style.display = "block";
