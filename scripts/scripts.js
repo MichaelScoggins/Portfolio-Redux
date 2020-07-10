@@ -14,18 +14,18 @@ $('#trigger').click(function(event){
 });
 
 //  click anywhere to close [portfolio handler]
-$('html').click(function() {
-  $('#parallax-modal-container').hide(); 
-});
+// $('html').click(function() {
+//   $('#parallax-modal-container').hide(); 
+// });
 
-$('#parallax-modal').click(function(event){
-  event.stopPropagation();
-});
+// $('#parallax-modal').click(function(event){
+//   event.stopPropagation();
+// });
 
-$('#portmodal-trigger').click(function(event){
-  $('#parallax-modal-container').toggle();    
-  document.getElementById("resume-modal").style.display = "none";
-});
+// $('#portmodal-trigger').click(function(event){
+//   $('#parallax-modal-container').toggle();    
+//   document.getElementById("resume-modal").style.display = "none";
+// });
 
 // click anywhere to close [about-me handler]
 $('html').click(function() {
@@ -229,9 +229,6 @@ if (event.target == parallaxModal) {
   parallaxModal.style.display = "none";
 }
 }
-
-
-
 // about-page-modal
 let aboutModal = document.getElementById("about-modal-container");
 let aboutTrigger = document.getElementById("about-trigger");
@@ -278,6 +275,27 @@ contactModal.style.display = "none";
 window.onclick = function(event) {
 if (event.target == contactModal) {
   contactModal.style.display = "none";
+}
+}
+
+
+// mobile portfolio modal
+
+let mobilePortModal = document.getElementById("mobile-portfolio");
+let mobilePortTrigger = document.getElementById("mobile-portfolio-trigger");
+let mobilePortSpan = document.getElementsByClassName("mobile-portfolio-close")[0];
+mobilePortTrigger.onclick = function() {
+  parallaxModal.style.display = "block";  
+  mobilePortModal.style.display = "block";
+}
+mobilePortSpan.onclick = function() {
+  mobilePortModal.style.display = "none";  
+  parallaxModal.style.display = "none";  
+}
+
+window.onclick = function(event) {
+if (event.target == mobilePortModal) {
+  mobilePortModal.style.display = "none";
 }
 }
 
