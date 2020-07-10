@@ -1472,6 +1472,11 @@ img {vertical-align: middle;}
     display: block;
     width: 100%;
     height: auto;
+    opacity: .8;
+  }
+
+  .gallery-img-container:hover .gallery-img{
+    opacity: 1;
   }
   
   .gallery-overlay {
@@ -1493,7 +1498,7 @@ img {vertical-align: middle;}
 
   .gallery-text {
     color: white;
-    font-size: 11px;
+    font-size: 25px;
     font-weight: bold;
     position: absolute;
     top: 50%;
@@ -1502,6 +1507,25 @@ img {vertical-align: middle;}
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    color: black;
+    font-weight: bolder;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    text-shadow:
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+      2px 2px 2px #000,
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
   }
 
   .delay {
@@ -1786,6 +1810,7 @@ img {vertical-align: middle;}
 
 .inspiration-modal-h2 {
   margin-top: 20px;
+  /* padding-top: 30px; */
   margin-left: 10px;
   /* margin-right: 70px; */
   text-align: center;
@@ -2042,6 +2067,7 @@ h3 {
 
 
 .mobile-portfolio-modal-h2 {
+  /* margin-top: 40px; */
   text-align: center;
   line-height: 42px;
   font-size: 30px;
@@ -2532,6 +2558,10 @@ textarea:focus {
 
 }
 
+
+
+
+
 @media screen and (max-width: 1025px) {
   
   #my-canvas {
@@ -2656,17 +2686,11 @@ textarea:focus {
     -webkit-text-stroke: 1px white;
     text-shadow: 
     -2px 2px white, 
-                  0 2px white, 
-                  1px 0 black, 
-                  0 -1px black;
+     0 2px white, 
+     1px 0 black, 
+     0 -1px black;
   }
 
-
-
-
-  /* #mobile-portfolio {
-    display: none;
-  } */
 
 
   /* popup resume iframe */
@@ -2675,15 +2699,8 @@ textarea:focus {
     height: 100vh;
     width: 100vw;
     position: fixed;
-    /* left: 0%; */
-    /* top: .1%; */
     z-index: 2;
-
   }
-
-
-
-
 
 
 
@@ -2700,10 +2717,10 @@ textarea:focus {
 .mobile-portfolio-close {
   position: sticky;
   top: 4px;
-  left: 5px;
+  left: 15px;
   color: #aaa;
   float: left;
-  font-size: 38px;
+  font-size: 60px;
   font-weight: bold;
   z-index: 3;
 }
@@ -2758,6 +2775,8 @@ textarea:focus {
 } 
 
 .inspiration-modal-h2 {
+  /* padding-top: 20px; */
+  
   margin-top: 20px;
   margin-left: 10px;
   /* margin-right: 70px; */
@@ -2795,12 +2814,27 @@ textarea:focus {
   font-size: 15px;
 }
   
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .gallery-column {
     flex: 100%;
     max-width: 100%;
   }
+  .gallery-text {
+      display: block;
+      color: white;
+      font-size: 42px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }    
+}
 
+.nasa-img {
+  width: 150%;
 }
 
 
@@ -2824,6 +2858,11 @@ textarea:focus {
     }
   
 }
+
+.gallery-img-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 /* injected gallery css ends here */
 
 
@@ -2833,7 +2872,6 @@ textarea:focus {
   width: 100%;
   margin: auto;
   margin-top: 40px;
-  margin-right: 10px;
 }
 
 .about-modal-class {
@@ -2862,8 +2900,9 @@ textarea:focus {
   text-align: center;
   margin-top: 48px;
   margin-bottom: 20px;
-  line-height: 35px;
-  font-size: 20px;
+  line-height: 54px;
+  font-weight: 900;
+  font-size: 40px;
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
@@ -2881,7 +2920,7 @@ textarea:focus {
     -1px -1px 0 #000,  
     1px -1px 0 #000,
     -1px 1px 0 #000,
-     1px 1px 0 #000;
+     2px 2px 0 #000;
 }
 
 .about-me-content {
@@ -2944,73 +2983,19 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
 #parallax-modal-container {
   display: none;
-  width: 100%;
-  /* margin-right: 100px; */
 
 }
 
-
-.parallax-modal-class {
-  display: none; 
-  /* margin-right: 100px; */
-  position: fixed; 
-  z-index: 2; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto;
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-#parallax-modal {
-  display: none;
-  background-color: #fefefe;
-  margin: 0% auto;
-  margin-right: 120px;  
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.parallax-modal-close {
-  color: #aaa;
-  position: fixed;
-  top: 1%;
-  left: 1%;
-  float: right;
-  font-size: 48px;
-  font-weight: bold;
-  z-index: 3;
-}
-
-.parallax-modal-close:hover,
-.parallax-modal-close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-  z-index: 3;
-} 
 
 
 .mobile-portfolio-modal-h2 {
   text-align: center;
   line-height: 42px;
   font-size: 50px;
-  margin-bottom: 30px;
-  padding-top: 15px;
+  margin-bottom: 20px;
+  padding-top: 45px;
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
