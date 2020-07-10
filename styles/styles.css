@@ -69,6 +69,10 @@ nav{
   display: none;
 }
 
+#mobile-macWallpaper {
+  display: none;
+}
+
 
 /* popup resume iframe */
 #resume-modal {
@@ -1568,7 +1572,7 @@ img {vertical-align: middle;}
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 580px) {
   #my-canvas {
     display: none;
     /* background-color: blue;  */
@@ -1580,6 +1584,10 @@ img {vertical-align: middle;}
   }
 
   #macWallpaper {
+    display: none;
+  }
+
+  #mobile-macWallpaper {
     display: block;
     border-radius: 5px 5px 5px 5px;
     width: 68%;
@@ -1591,6 +1599,8 @@ img {vertical-align: middle;}
     background-size: cover;
     opacity: .6;
   }
+
+  
 
 
   .cat-img {
@@ -1623,17 +1633,15 @@ img {vertical-align: middle;}
 
   }
   nav{
-    /* all: initial; */
-    /* display: none; */
     height: 100%;
     width: 270px;
     margin-left: 6rem;
-    grid-area: navdiv;
     z-index: 2;
     background-color: rgba(16,16,1,0.83);
     /* background-color: rgba(186,186,152,0.73) */
   }
   .nav-ul{
+    margin-top: 1px;
     width: 1px;
     display: flex;
     flex-direction: column;
@@ -2097,6 +2105,7 @@ h3 {
 }
 
 .tooltiptext4 {
+  display: none;
   visibility: hidden;
   font-size: 22px;
   width: 220px;
@@ -2411,3 +2420,57 @@ textarea:focus {
 }
 
 
+/* @media and screen (max-width: 900px) {
+  #mobile-macWallpaper {
+    display: block;
+    background-color: blue;
+    border-radius: 5px 5px 5px 5px;
+    width: 68%;
+    height: 22.2%; 
+    position: absolute;
+    bottom: 28.5%;
+    right: 3%;  
+    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background-size: cover;
+    opacity: .6;
+  }  
+} */
+
+@media screen and (min-height: 800px) and (max-width: 580px) {
+  #mobile-macWallpaper {
+    display: block;
+    border-radius: 5px 5px 5px 5px;
+    width: 68%;
+    height: 22.2%; 
+    position: absolute;
+    bottom: 28.5%;
+    right: 12%;  
+    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background-size: cover;
+    opacity: .6;
+  }
+
+}
+
+@media screen and (min-height: 500px) and (max-width: 350px) {
+  .nav-ul li a{
+    font-size: 41px;
+  }
+
+}
+
+@media screen and (min-height: 810px) and (max-width: 400px) {
+  #mobile-macWallpaper {
+    display: block;
+    border-radius: 5px 5px 5px 5px;
+    width: 81%;
+    height: 21.8%; 
+    position: absolute;
+    bottom: 28.5%;
+    right: 5.5%;  
+    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background-size: cover;
+    opacity: .6;
+  }
+
+}

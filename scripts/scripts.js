@@ -73,8 +73,12 @@ document.getElementById("myModal").style.display = "none";
 //link/screensaver/wallpaper event listeners
 // document.getElementById("macWallpaper").addEventListener("click", wallpaper2blog);
 
-document.getElementById("portmodal-trigger").addEventListener("mouseover", portfolioHover);
-document.getElementById("portmodal-trigger").addEventListener("mouseout", noPortfolioHover);
+
+
+
+
+document.getElementById("portmodal-trigger").addEventListener("mouseenter", portfolioHover);
+document.getElementById("portmodal-trigger").addEventListener("mouseleave", noPortfolioHover);
 document.getElementById("trigger").addEventListener("mouseenter", resumeHover);
 document.getElementById("trigger").addEventListener("mouseleave", noResumeHover);
 document.getElementById("blog-trigger").addEventListener("mouseenter", handleBlogHover);
@@ -280,13 +284,13 @@ if (event.target == contactModal) {
 
 
 // mobile portfolio modal
-
 let mobilePortModal = document.getElementById("mobile-portfolio");
 let mobilePortTrigger = document.getElementById("mobile-portfolio-trigger");
 let mobilePortSpan = document.getElementsByClassName("mobile-portfolio-close")[0];
 mobilePortTrigger.onclick = function() {
   parallaxModal.style.display = "block";  
   mobilePortModal.style.display = "block";
+  aboutModal.style.display = "none";
 }
 mobilePortSpan.onclick = function() {
   mobilePortModal.style.display = "none";  
