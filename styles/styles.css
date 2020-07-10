@@ -2473,4 +2473,21 @@ textarea:focus {
     opacity: .6;
   }
 
+  .nav-ul li a{
+    margin-top: 60px;
+    font-size: 55px;
+  }
+
+  
+  nav{
+    height: 350px;
+    width: 335px;
+    margin-left: 3rem;
+    z-index: 2;
+    background-color: rgba(16,16,1,0.83);
+    /* background-color: rgba(186,186,152,0.73) */
+  }
+
+  
+
 }

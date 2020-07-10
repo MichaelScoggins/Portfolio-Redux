@@ -360,7 +360,7 @@ let circleArray = [];
 function init() {
 
 circleArray = [];
-for (i = 0; i < 200; i++) {
+for (i = 0; i < 160; i++) {
   let radius = 3;
   let x = Math.random() * (innerWidth - radius * 2) + radius;
   let y = Math.random() * (innerHeight - radius * 2) + radius;
@@ -381,18 +381,3 @@ for (i = 0; i < circleArray.length; i++) {
 
 init()
 animate()
-
-
-
-
-
-
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("nav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-} 
