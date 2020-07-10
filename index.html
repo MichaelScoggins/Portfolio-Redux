@@ -15,14 +15,8 @@
 </head>
 <body id="body">  
 
-
-  <!-- <a href="https://github.com/MichaelScoggins"> -->
-    <!-- <li id="tooltip2" class="fab fa-github"> -->
-    <!-- <span class="tooltiptext2">view my projects hosted on gitHub</span> -->
-    <!-- </li></a> -->
-
   <header class="header-container">       
-    <nav>        
+    <nav id="nav">        
       <ul class="nav-ul">           
         <li><a id="portmodal-trigger" class="hover-shadow cursor">Portfolio</a></li>
         <li><a id="about-trigger" href="#">About</a></li>
@@ -33,6 +27,27 @@
         <li><a id="inspiration-trigger" href="#">Inspiration</a></li>
       </ul>              
     </nav>
+
+    
+    <!-- <div class="hamburger">
+      <a class="active">
+      
+      <div id="myLinks">   
+          <ul class="nav-ul">           
+            <li><a id="portmodal-trigger" class="hover-shadow cursor">Portfolio</a></li>
+            <li><a id="about-trigger" href="#">About</a></li>
+            <li><a id="trigger" href="#">Résumé</a></li>
+            <li><a id="blog-trigger" class="tooltip4" href="https://medium.com/me/stories/public" target="_blank">
+              <span class="tooltiptext4">opens in new tab</span>Blog</a></li>
+            <li><a id="contact-trigger" href="#">Contact</a></li>
+            <li><a id="inspiration-trigger" href="#">Inspiration</a></li>
+          </ul>
+      </div>
+    </a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+      </a>
+  </div> -->
             
   </header>
 
@@ -230,6 +245,82 @@
 
         </div> 
       </div>
+
+
+
+      <div class="mobile-portfolio">
+      <!-- injected gallery starts here -->
+        <main class="gallery gallery-body">
+          <span class="inspiration-modal-close">&times;</span>
+          <h2 class="mobile-portfolio-modal-h2"><mark>My</mark><mark>Recent Work</mark></h2>
+          <div class="gallery-row">
+              <div class="gallery-column">
+                  <div class="gallery-img-container">
+                  <img src="/images/barbershop/bs index.jpg" class="gallery-img">
+                      <div class="gallery-overlay">
+                          <div class="gallery-text">“Be not afraid of life. Believe that life is worth living, and your belief will help create the fact.” – William James</div>
+                      </div>
+                  </div>
+                  <div class="gallery-img-container">
+                      <img src="/images/barbershop/bs contact.jpg" class="gallery-img">
+                          <div class="gallery-overlay">
+                              <div class="gallery-text">“I am not a product of my circumstances. I am a product of my decisions.” – Stephen Covey</div>
+                          </div>
+                      </div>
+                  <div class="gallery-img-container">
+                      <img src="/images/barbershop/bs about.jpg" class="gallery-img">
+                          <div class="gallery-overlay">
+                              <div class="gallery-text">“Our lives begin to end the day we become silent about things that matter.” – Martin Luther King Jr.</div>
+                          </div>
+                      </div>
+                  <div class="gallery-img-container">
+                      <img src="/images/barbershop/bs blog.jpg" class="gallery-img">
+                          <div class="gallery-overlay">
+                              <div class="gallery-text">“When I let go of what I am, I become what I might be.” – Lao Tzu</div>
+                          </div>
+                      </div>
+                  <div class="gallery-img-container">
+                      <img src="/images/barbershop/bs blog responsive.jpg" class="gallery-img">
+                          <div class="gallery-overlay">
+                              <div class="gallery-text">“Even if you’re on the right track, you’ll get run over if you just sit there.” – Will Rogers</div>
+                          </div>
+                      </div>
+                  <div class="gallery-img-container">
+                      <img src="/images/barbershop/bs contact.jpg" class="gallery-img">
+                          <div class="gallery-overlay">
+                              <div class="gallery-text">“Nurture your mind with great thoughts. To believe in the heroic makes heroes.” – Benjamin Disraeli</div>
+                          </div>
+                      </div>
+              </div>
+              <div class="gallery-column">
+                <div class="gallery-img-container">
+                  <img src="/images/barbershop/bs contact responsive.jpg" class="gallery-img">
+                      <div class="gallery-overlay">
+                          <div class="delay animate__animated animate__animated animate__backInLeft gallery-text">“The great thing in this world is not so much where you stand, as in what direction you are moving.” – Oliver Wendell Holmes</div>
+                      </div>
+                  </div>                  
+                      <div class="gallery-img-container">
+                          <img src="/images/barbershop/bs gallery.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">Cool Lens Flare, isn't it?</div>
+                              </div>
+                          </div>
+                      <div class="gallery-img-container">
+                          <img src="/images/nasa-page.jpg" class="gallery-img">
+                              <div class="gallery-overlay">
+                                  <div class="gallery-text">“The great thing in this world is not so much where you stand, as in what direction you are moving.” – Oliver Wendell Holmes</div>
+                              </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+      <!-- injected gallery ends here -->
+      </div>
+
+
+
+
+
     </div>
 
 
@@ -250,7 +341,7 @@
         <span class="inspiration-modal-close">&times;</span>
         <h2 class="inspiration-modal-h2"><mark>My</mark><mark>Inspiration</mark></h2>
 <!-- injected gallery starts here -->
-        <main class="gallery">
+        <main class="gallery gallery-body">
           <div class="gallery-row">
               <div class="gallery-column">
                   <div class="gallery-img-container">

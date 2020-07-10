@@ -105,7 +105,8 @@ function aboutHover() {
 
 function noAboutHover() {
   document.getElementById("mini-about-me-div").style.display = "none";
-  document.getElementById("canvas-div").style.display = "block";
+  document.getElementById("macWallpaper").style.display = "none";
+  document.getElementById("canvas-div").style.display = "block";  
 }
 
 
@@ -337,8 +338,8 @@ let circleArray = [];
 function init() {
 
 circleArray = [];
-for (i = 0; i < 150; i++) {
-  let radius = 4;
+for (i = 0; i < 200; i++) {
+  let radius = 3;
   let x = Math.random() * (innerWidth - radius * 2) + radius;
   let y = Math.random() * (innerHeight - radius * 2) + radius;
   let dx = (Math.random() - 0.5) * 3;
@@ -359,3 +360,17 @@ for (i = 0; i < circleArray.length; i++) {
 init()
 animate()
 
+
+
+
+
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("nav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
