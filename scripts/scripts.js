@@ -291,6 +291,7 @@ mobilePortTrigger.onclick = function() {
   parallaxModal.style.display = "block";  
   mobilePortModal.style.display = "block";
   aboutModal.style.display = "none";
+  
 }
 mobilePortSpan.onclick = function() {
   mobilePortModal.style.display = "none";  
