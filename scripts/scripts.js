@@ -1,21 +1,20 @@
 // click anywhere to close [resume handler]
 $('html').click(function() {
-  $('#resume-modal').hide(); 
+	$('#resume-modal').hide();
 });
 
-$('li').click(function(event){
-  event.stopPropagation();
+$('li').click(function(event) {
+	event.stopPropagation();
 });
 
-$('#trigger').click(function(event){
-  $('#resume-modal').toggle();      
-  document.getElementById("parallax-modal-container").style.display = "none";
-
+$('#trigger').click(function(event) {
+	$('#resume-modal').toggle();
+	document.getElementById('parallax-modal-container').style.display = 'none';
 });
 
 //  click anywhere to close [portfolio handler]
 // $('html').click(function() {
-//   $('#parallax-modal-container').hide(); 
+//   $('#parallax-modal-container').hide();
 // });
 
 // $('#parallax-modal').click(function(event){
@@ -23,171 +22,163 @@ $('#trigger').click(function(event){
 // });
 
 // $('#portmodal-trigger').click(function(event){
-//   $('#parallax-modal-container').toggle();    
+//   $('#parallax-modal-container').toggle();
 //   document.getElementById("resume-modal").style.display = "none";
 // });
 
 // click anywhere to close [about-me handler]
 $('html').click(function() {
-$('#about-modal-container').hide(); 
+	$('#about-modal-container').hide();
 });
 
-$('#about-modal').click(function(event){
-event.stopPropagation();
+$('#about-modal').click(function(event) {
+	event.stopPropagation();
 });
 
-$('#macWallpaper').click(function(event){
-  event.stopPropagation();
-  });
-
-$('#about-trigger').click(function(event){
-$('#about-modal-container').toggle();    
-document.getElementById("resume-modal").style.display = "none";
-document.getElementById("parallax-modal-container").style.display = "none";
-document.getElementById("macWallpaper").style.display = "none";
+$('#macWallpaper').click(function(event) {
+	event.stopPropagation();
 });
 
-$('#macWallpaper').click(function(event){
-  $('#about-modal-container').toggle();    
-  document.getElementById("resume-modal").style.display = "none";
-  document.getElementById("parallax-modal-container").style.display = "none";
-  document.getElementById("macWallpaper").style.display = "none";
-  });
+$('#about-trigger').click(function(event) {
+	$('#about-modal-container').toggle();
+	document.getElementById('resume-modal').style.display = 'none';
+	document.getElementById('parallax-modal-container').style.display = 'none';
+	document.getElementById('macWallpaper').style.display = 'none';
+});
+
+$('#macWallpaper').click(function(event) {
+	$('#about-modal-container').toggle();
+	document.getElementById('resume-modal').style.display = 'none';
+	document.getElementById('parallax-modal-container').style.display = 'none';
+	document.getElementById('macWallpaper').style.display = 'none';
+});
 
 // click anywhere to close [inspiration handler]
 $('html').click(function() {
-$('#inspiration-modal-container').hide(); 
+	$('#inspiration-modal-container').hide();
 });
 
-$('#inspiration-modal').click(function(event){
-event.stopPropagation();
+$('#inspiration-modal').click(function(event) {
+	event.stopPropagation();
 });
 
-$('#inspiration-trigger').click(function(event){
-$('#inspiration-modal-container').toggle();    
-document.getElementById("resume-modal").style.display = "none";
-document.getElementById("myModal").style.display = "none";
+$('#inspiration-trigger').click(function(event) {
+	$('#inspiration-modal-container').toggle();
+	document.getElementById('resume-modal').style.display = 'none';
+	document.getElementById('myModal').style.display = 'none';
 });
-
 
 //link/screensaver/wallpaper event listeners
 // document.getElementById("macWallpaper").addEventListener("click", wallpaper2blog);
 
-
-
-
-
-document.getElementById("portmodal-trigger").addEventListener("mouseenter", portfolioHover);
-document.getElementById("portmodal-trigger").addEventListener("mouseleave", noPortfolioHover);
-document.getElementById("trigger").addEventListener("mouseenter", resumeHover);
-document.getElementById("trigger").addEventListener("mouseleave", noResumeHover);
-document.getElementById("blog-trigger").addEventListener("mouseenter", handleBlogHover);
-document.getElementById("blog-trigger").addEventListener("mouseleave", noBlogHover);
-document.getElementById("about-trigger").addEventListener("mouseenter", aboutHover);
-document.getElementById("about-trigger").addEventListener("mouseleave", noAboutHover);  
-document.getElementById("contact-trigger").addEventListener("mouseenter", contactHover);
-document.getElementById("contact-trigger").addEventListener("mouseleave", noContactHover);
-document.getElementById("inspiration-trigger").addEventListener("mouseenter", inspirationHover);
-document.getElementById("inspiration-trigger").addEventListener("mouseleave", noInspirationHover);  
-
+document.getElementById('portmodal-trigger').addEventListener('mouseenter', portfolioHover);
+document.getElementById('portmodal-trigger').addEventListener('mouseleave', noPortfolioHover);
+document.getElementById('trigger').addEventListener('mouseenter', resumeHover);
+document.getElementById('trigger').addEventListener('mouseleave', noResumeHover);
+document.getElementById('blog-trigger').addEventListener('mouseenter', handleBlogHover);
+document.getElementById('blog-trigger').addEventListener('mouseleave', noBlogHover);
+document.getElementById('about-trigger').addEventListener('mouseenter', aboutHover);
+document.getElementById('about-trigger').addEventListener('mouseleave', noAboutHover);
+document.getElementById('contact-trigger').addEventListener('mouseenter', contactHover);
+document.getElementById('contact-trigger').addEventListener('mouseleave', noContactHover);
+document.getElementById('inspiration-trigger').addEventListener('mouseenter', inspirationHover);
+document.getElementById('inspiration-trigger').addEventListener('mouseleave', noInspirationHover);
 
 function inspirationHover() {
-  document.getElementById("mini-inspiration-mac-preview-container").style.display = "block";
-  document.getElementById("canvas-div").style.display = "none";
+	document.getElementById('mini-inspiration-mac-preview-container').style.display = 'block';
+	document.getElementById('canvas-div').style.display = 'none';
 }
 
 function noInspirationHover() {
-  document.getElementById("mini-inspiration-mac-preview-container").style.display = "none";
-  document.getElementById("canvas-div").style.display = "block";
+	document.getElementById('mini-inspiration-mac-preview-container').style.display = 'none';
+	document.getElementById('canvas-div').style.display = 'block';
 }
 
 function aboutHover() {
-  document.getElementById("mini-about-me-div").style.display = "block";
-  document.getElementById("canvas-div").style.display = "none";
-  document.getElementById("macWallpaper").style.display = "block";
+	document.getElementById('mini-about-me-div').style.display = 'block';
+	document.getElementById('canvas-div').style.display = 'none';
+	document.getElementById('macWallpaper').style.display = 'block';
 }
 
 function noAboutHover() {
-  document.getElementById("mini-about-me-div").style.display = "none";
-  document.getElementById("macWallpaper").style.display = "none";
-  document.getElementById("canvas-div").style.display = "block";  
+	document.getElementById('mini-about-me-div').style.display = 'none';
+	document.getElementById('macWallpaper').style.display = 'none';
+	document.getElementById('canvas-div').style.display = 'block';
 }
 
-
-  // window.open('https://medium.com/me/stories/public', '_blank');
-// function wallpaper2blog() {    
-//   document.getElementById("about-modal-container").style.display = "block";  
+// window.open('https://medium.com/me/stories/public', '_blank');
+// function wallpaper2blog() {
+//   document.getElementById("about-modal-container").style.display = "block";
 // }
 
 function portfolioHover() {
-  document.getElementById("mini-slideshow-div").style.display = "block";
-  document.getElementById("canvas-div").style.display = "none";
-  document.getElementById("macWallpaper").style.display = "block";
+	document.getElementById('mini-slideshow-div').style.display = 'block';
+	document.getElementById('canvas-div').style.display = 'none';
+	document.getElementById('macWallpaper').style.display = 'block';
 }
 
-function noPortfolioHover() {    
-  document.getElementById("mini-slideshow-div").style.display = "none";
-  document.getElementById("macWallpaper").style.display = "none";
-  document.getElementById("canvas-div").style.display = "block";
-  // document.getElementById("my-canvas").removeProperty('display');
+function noPortfolioHover() {
+	document.getElementById('mini-slideshow-div').style.display = 'none';
+	document.getElementById('macWallpaper').style.display = 'none';
+	document.getElementById('canvas-div').style.display = 'block';
+	// document.getElementById("my-canvas").removeProperty('display');
 }
 
 function resumeHover() {
-  document.getElementById("mini-resume-div").style.display = "block";
-  document.getElementById("canvas-div").style.display = "none";
-  document.getElementById("macWallpaper").style.display = "block";
+	document.getElementById('mini-resume-div').style.display = 'block';
+	document.getElementById('canvas-div').style.display = 'none';
+	document.getElementById('macWallpaper').style.display = 'block';
 }
 
-function noResumeHover() {    
-  document.getElementById("mini-resume-div").style.display = "none";
-  document.getElementById("macWallpaper").style.display = "none";
-  document.getElementById("canvas-div").style.display = "block";
+function noResumeHover() {
+	document.getElementById('mini-resume-div').style.display = 'none';
+	document.getElementById('macWallpaper').style.display = 'none';
+	document.getElementById('canvas-div').style.display = 'block';
 }
 
 function handleBlogHover() {
-  document.getElementById("mini-blog-div").style.display = "block";
-  document.getElementById("canvas-div").style.display = "none";
-  document.getElementById("macWallpaper").style.display = "block";
+	document.getElementById('mini-blog-div').style.display = 'block';
+	document.getElementById('canvas-div').style.display = 'none';
+	document.getElementById('macWallpaper').style.display = 'block';
 }
 
-function noBlogHover() {    
-  document.getElementById("mini-blog-div").style.display = "none";
-  document.getElementById("macWallpaper").style.display = "none";
-  document.getElementById("canvas-div").style.display = "block";
+function noBlogHover() {
+	document.getElementById('mini-blog-div').style.display = 'none';
+	document.getElementById('macWallpaper').style.display = 'none';
+	document.getElementById('canvas-div').style.display = 'block';
 }
 
 function contactHover() {
-  document.getElementById("mini-contact-me-div").style.display = "block";
-  document.getElementById("canvas-div").style.display = "none";
-  document.getElementById("macWallpaper").style.display = "block";
+	document.getElementById('mini-contact-me-div').style.display = 'block';
+	document.getElementById('canvas-div').style.display = 'none';
+	document.getElementById('macWallpaper').style.display = 'block';
 }
 
 function noContactHover() {
-  document.getElementById("mini-contact-me-div").style.display = "none";
-  document.getElementById("canvas-div").style.display = "block";
-  document.getElementById("macWallpaper").style.display = "none";
+	document.getElementById('mini-contact-me-div').style.display = 'none';
+	document.getElementById('canvas-div').style.display = 'block';
+	document.getElementById('macWallpaper').style.display = 'none';
 }
 
 // screensaver hover effect
-$(document).ready(function(){
-  var x;
-  $("#my-canvas").mouseover(function(){
-    x = $("#my-canvas").detach();      
-  document.getElementById("macWallpaper").style.display = "block";
-  });
-  $("#macWallpaper").mouseout(function(){      
-  document.getElementById("macWallpaper").style.display = "none";
-    $("#canvas-div").prepend(x);
-  });
+$(document).ready(function() {
+	var x;
+	$('#my-canvas').mouseover(function() {
+		x = $('#my-canvas').detach();
+		document.getElementById('macWallpaper').style.display = 'block';
+	});
+	$('#macWallpaper').mouseout(function() {
+		document.getElementById('macWallpaper').style.display = 'none';
+		$('#canvas-div').prepend(x);
+	});
 });
-
 
 // mini-slideshow modal
 var slideIndex1 = 1;
 showSlides1(slideIndex1);
 
 function plusMiniSlides(n) {
-showSlides1(slideIndex1 += n);
+	showSlides1((slideIndex1 += n));
 }
 
 // function currentMiniSlide(n) {
@@ -198,187 +189,210 @@ var slideIndex1 = 0;
 showSlides1();
 
 function showSlides1() {
-var i;
-var slides = document.getElementsByClassName("mini-slides");
-var dots = document.getElementsByClassName("mini-dot");
-for (i = 0; i < slides.length; i++) {
-  slides[i].style.display = "none";  
+	var i;
+	var slides = document.getElementsByClassName('mini-slides');
+	var dots = document.getElementsByClassName('mini-dot');
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = 'none';
+	}
+	slideIndex1++;
+	if (slideIndex1 > slides.length) {
+		slideIndex1 = 1;
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(' active', '');
+	}
+	slides[slideIndex1 - 1].style.display = 'block';
+	dots[slideIndex1 - 1].className += ' active';
+	setTimeout(showSlides1, 2000);
 }
-slideIndex1++;
-if (slideIndex1 > slides.length) {slideIndex1 = 1}    
-for (i = 0; i < dots.length; i++) {
-  dots[i].className = dots[i].className.replace(" active", "");
-}
-slides[slideIndex1-1].style.display = "block";  
-dots[slideIndex1-1].className += " active";
-setTimeout(showSlides1, 2000);
-}
-
-
-
 
 // portfolio parallax modal
-let parallaxModal = document.getElementById("parallax-modal-container");
-let parallaxTrigger = document.getElementById("portmodal-trigger");
-let parallaxSpan = document.getElementsByClassName("parallax-modal-close")[0];
+let parallaxModal = document.getElementById('parallax-modal-container');
+let parallaxTrigger = document.getElementById('portmodal-trigger');
+let parallaxSpan = document.getElementsByClassName('parallax-modal-close')[0];
 parallaxTrigger.onclick = function() {
-parallaxModal.style.display = "block";
-}
+	parallaxModal.style.display = 'block';
+};
 parallaxSpan.onclick = function() {
-parallaxModal.style.display = "none";
-}
+	parallaxModal.style.display = 'none';
+};
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-if (event.target == parallaxModal) {
-  parallaxModal.style.display = "none";
-}
-}
+	if (event.target == parallaxModal) {
+		parallaxModal.style.display = 'none';
+	}
+};
 // about-page-modal
-let aboutModal = document.getElementById("about-modal-container");
-let aboutTrigger = document.getElementById("about-trigger");
-let aboutSpan = document.getElementsByClassName("about-modal-close")[0];
+let aboutModal = document.getElementById('about-modal-container');
+let aboutTrigger = document.getElementById('about-trigger');
+let aboutSpan = document.getElementsByClassName('about-modal-close')[0];
 aboutTrigger.onclick = function() {
-aboutModal.style.display = "block";
-}
+	aboutModal.style.display = 'block';
+};
 aboutSpan.onclick = function() {
-aboutModal.style.display = "none";
-}
+	aboutModal.style.display = 'none';
+};
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-if (event.target == aboutModal) {
-  aboutModal.style.display = "none";
-}
-}
+	if (event.target == aboutModal) {
+		aboutModal.style.display = 'none';
+	}
+};
 // inspiration-page-modal
-let inspirationModal = document.getElementById("inspiration-modal-container");
-let inspirationTrigger = document.getElementById("inspiration-trigger");
-let inspirationSpan = document.getElementsByClassName("inspiration-modal-close")[0];
+let inspirationModal = document.getElementById('inspiration-modal-container');
+let inspirationTrigger = document.getElementById('inspiration-trigger');
+let inspirationSpan = document.getElementsByClassName('inspiration-modal-close')[0];
 inspirationTrigger.onclick = function() {
-inspirationModal.style.display = "block";
-}
+	inspirationModal.style.display = 'block';
+};
 inspirationSpan.onclick = function() {
-inspirationModal.style.display = "none";
-}
+	inspirationModal.style.display = 'none';
+};
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-if (event.target == inspirationModal) {
-  inspirationModal.style.display = "none";
-}
-}
+	if (event.target == inspirationModal) {
+		inspirationModal.style.display = 'none';
+	}
+};
 // contact-page-modal
-let contactModal = document.getElementById("contact-modal-container");
-let contactTrigger = document.getElementById("contact-trigger");
-let contactSpan = document.getElementsByClassName("contact-modal-close")[0];
+let contactModal = document.getElementById('contact-modal-container');
+let contactTrigger = document.getElementById('contact-trigger');
+let contactSpan = document.getElementsByClassName('contact-modal-close')[0];
 contactTrigger.onclick = function() {
-contactModal.style.display = "block";
-}
+	contactModal.style.display = 'block';
+};
 contactSpan.onclick = function() {
-contactModal.style.display = "none";
-}
+	contactModal.style.display = 'none';
+};
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-if (event.target == contactModal) {
-  contactModal.style.display = "none";
-}
-}
-
+	if (event.target == contactModal) {
+		contactModal.style.display = 'none';
+	}
+};
 
 // mobile portfolio modal
-let mobilePortModal = document.getElementById("mobile-portfolio");
-let mobilePortTrigger = document.getElementById("mobile-portfolio-trigger");
-let mobilePortSpan = document.getElementsByClassName("mobile-portfolio-close")[0];
+let mobilePortModal = document.getElementById('mobile-portfolio');
+let mobilePortTrigger = document.getElementById('mobile-portfolio-trigger');
+let mobilePortSpan = document.getElementsByClassName('mobile-portfolio-close')[0];
 mobilePortTrigger.onclick = function() {
-  parallaxModal.style.display = "block";  
-  mobilePortModal.style.display = "block";
-  aboutModal.style.display = "none";
-  
-}
+	parallaxModal.style.display = 'block';
+	mobilePortModal.style.display = 'block';
+	aboutModal.style.display = 'none';
+};
 mobilePortSpan.onclick = function() {
-  mobilePortModal.style.display = "none";  
-  parallaxModal.style.display = "none";  
-}
+	mobilePortModal.style.display = 'none';
+	parallaxModal.style.display = 'none';
+};
 
 window.onclick = function(event) {
-if (event.target == mobilePortModal) {
-  mobilePortModal.style.display = "none";
-}
-}
-
-
-
-
+	if (event.target == mobilePortModal) {
+		mobilePortModal.style.display = 'none';
+	}
+};
 
 // screensaver particles
-let canvas = document.getElementById("my-canvas")
+let canvas = document.getElementById('my-canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-const c = canvas.getContext('2d')
+const c = canvas.getContext('2d');
 
 window.addEventListener('resize', function() {
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-init()
-})
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	init();
+});
 
 function Circle(x, y, dx, dy, radius) {
-this.x = x;
-this.y = y;
-this.dx = dx;
-this.dy = dy;
-this.radius = radius;
+	this.x = x;
+	this.y = y;
+	this.dx = dx;
+	this.dy = dy;
+	this.radius = radius;
 
-const colors = [null, "rgba(255,0,4,0.25)", "rgba(0,255,43,0.25)", "#00ffef", "#00b6ff", "#0042ff", "rgba(255,0,212,0.2)", "#rgba(197,255,0,0.48)", "rgba(255,0,221,0.25)", "rgba(255,0,4,0.3)", "rgba(255,0,0,0.1)", "rgba(255,251,0,0.5)", "rgba(0,138,255,0.5)", "rgba(236,0,4,0.45)", "#rgba(236,0,4,0.45)", "rgba(255,139,0,0.82)", "rgba(255,254,0,0.22)", "rgba(0,255,29,0.92)", "rgba(0,255,118,0.72)", "rgba(0,223,255,0.62)", "rgba(115,0,255,0.92)", "rgba(255,0,21,0.92)", "rgba(255,0,253,0.92)", "rgba(255,255,0,1)", "rgba(255,255,0,1)", "rgba(255,255,255,1)", "rgba(255,255,255,1)", "rgba(255,255,255,1)"]    
+	const colors = [
+		null,
+		'rgba(255,0,4,0.25)',
+		'rgba(0,255,43,0.25)',
+		'#00ffef',
+		'#00b6ff',
+		'#0042ff',
+		'rgba(255,255,0,1)',
+		'#rgba(197,255,0,0.48)',
+		'rgba(255,0,221,0.25)',
+		'rgba(255,0,21,0.92)',
+		'rgba(255,0,0,0.1)',
+		'rgba(255,251,0,0.5)',
+		'rgba(0,138,255,0.5)',
+		'rgba(236,0,4,0.45)',
+		'#rgba(236,0,4,0.45)',
+		'rgba(255,139,0,0.82)',
+		'rgba(255,254,0,0.22)',
+		'rgba(0,255,29,0.92)',
+		'rgba(0,255,118,0.72)',
+		'rgba(0,223,255,0.62)',
+		'rgba(115,0,255,0.92)',
+		'rgba(255,0,21,0.92)',
+		'rgba(255,0,253,0.92)',
+		'rgba(255,255,0,1)',
+		'rgba(255,255,0,1)',
+		'rgba(255,255,255,1)',
+		'rgba(255,255,255,1)',
+		'rgba(255,255,255,1)'
+	];
 
-// const colors = [null, "#8C0C3C", "#1B2968", "#4B9C2B", "#A4C89C", "#F8605F", "#F8B493", "#32B9B2", "#F85532", "#C2C8E4", "#357153", "#A061D4", "#404462", ]  
-const randomIndex = Math.floor(Math.random() * (27 - 1)) + 1
+  // const colors = [null, "#8C0C3C", "#1B2968", "#4B9C2B", "#A4C89C", "#F8605F", "#F8B493", "#32B9B2", "#F85532", "#C2C8E4", "#357153", "#A061D4", "#404462", ]
+  
 
-this.draw = function() {
-  c.beginPath();
-  c.strokeStyle = colors[randomIndex]
-  c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);    
-  c.fillStyle = colors[randomIndex]
-  c.fill()
-  c.stroke()
-}
+	const randomIndex = Math.floor(Math.random() * (27 - 1)) + 1;
 
-this.update = function () {
-  if(this.x + this.radius > innerWidth || this.x - this.radius < 0) {
-    (this.dx = -this.dx)
-  }
+	this.draw = function() {
+		c.beginPath();
+		c.strokeStyle = colors[randomIndex];
+		c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+		c.fillStyle = colors[randomIndex];
+		c.fill();
+		c.stroke();
+	};
 
-  if(this.y + this.radius > innerHeight || this.y - this.radius < 0) {
-    (this.dy = -this.dy)
-  }  
-  this.y += this.dy
-  this.x += this.dx
+	this.update = function() {
+		if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+			this.dx = -this.dx;
+		}
 
-  this.draw();
-}
+		if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+			this.dy = -this.dy;
+		}
+		this.y += this.dy;
+		this.x += this.dx;
+
+		this.draw();
+	};
 }
 
 let circleArray = [];
 
 function init() {
-
-circleArray = [];
-for (i = 0; i < 160; i++) {
-  let radius = 3;
-  let x = Math.random() * (innerWidth - radius * 2) + radius;
-  let y = Math.random() * (innerHeight - radius * 2) + radius;
-  let dx = (Math.random() - 0.5) * 3;
-  let dy = (Math.random() - 0.5) * 3;
-  circleArray.push(new Circle(x, y, dx, dy, radius))
-}
+	circleArray = [];
+	for (i = 0; i < 160; i++) {
+		let radius = 3;
+		let x = Math.random() * (innerWidth - radius * 2) + radius;
+		let y = Math.random() * (innerHeight - radius * 2) + radius;
+		let dx = (Math.random() - 0.5) * 3;
+		let dy = (Math.random() - 0.5) * 3;
+		circleArray.push(new Circle(x, y, dx, dy, radius));
+	}
 }
 
 const animate = () => {
-requestAnimationFrame(animate)
+	requestAnimationFrame(animate);
 
-c.clearRect(0, 0, innerWidth, innerHeight) 
-for (i = 0; i < circleArray.length; i++) {
-  circleArray[i].update();
-}
-}
+	c.clearRect(0, 0, innerWidth, innerHeight);
+	for (i = 0; i < circleArray.length; i++) {
+		circleArray[i].update();
+	}
+};
 
-init()
-animate()
+init();
+animate();
