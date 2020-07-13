@@ -140,7 +140,7 @@ nav{
   position: absolute;
   bottom: 22.5%;
   right: .8%;  
-  background: url(/wallpaper2you_259466.jpg) no-repeat;
+  background: url(../wallpaper2you_259466.jpg) no-repeat;
   background-size: cover;
   opacity: .6;
 }
@@ -154,7 +154,7 @@ nav{
   position: absolute;
   bottom: 22.8%;
   right: 1.2%;  
-  background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
+  background: url(../da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
   background-size: cover;
   opacity: .6;
 }
@@ -165,7 +165,7 @@ nav{
       left: 40%;
       width: 250px;
       height: 300px;
-      background: url(/images/hang-in-there.jpg) no-repeat;
+      background: url(../images/hang-in-there.jpg) no-repeat;
       background-size: contain;
       opacity: .5;
       z-index: -1;
@@ -807,31 +807,31 @@ textarea:focus {
 
 
 .bgimg-1 {
-  background-image: url(/images/barbershop/bs\ index.jpg);
+  background-image: url(../images/barbershop/bs\ index.jpg);
 }
 
 .bgimg-2 {
-  background-image: url(/images/barbershop/bs\ contact.jpg);
+  background-image: url(../images/barbershop/bs\ contact.jpg);
   /* min-height: 400px; */
 }
 
 .bgimg-3 {
-  background-image: url(/images/barbershop/bs\ about.jpg);
+  background-image: url(../images/barbershop/bs\ about.jpg);
   /* min-height: 400px; */
 }
 
 .bgimg-4 {
-  background-image: url(/images/barbershop/bs\ blog.jpg);
+  background-image: url(../images/barbershop/bs\ blog.jpg);
   color: white;
 }
 
 /* .bgimg-5 {
-  background-image: url(/images/barbershop/bs\ blog\ ipadjpg.jpg);
+  background-image: url(../images/barbershop/bs\ blog\ ipadjpg.jpg);
   color: white;
 } */
 
 .bgimg-6 {
-  background-image: url(/images/barbershop/bs\ blog\ responsive.jpg);
+  background-image: url(../images/barbershop/bs\ blog\ responsive.jpg);
   color: white;
 }
 
@@ -841,22 +841,22 @@ textarea:focus {
 }
 
 .bgimg-7 {
-  background-image: url(/images/barbershop/bs\ contact.jpg);
+  background-image: url(../images/barbershop/bs\ contact.jpg);
   color: white;
 }
 
 .bgimg-8 {
-  background-image: url(/images/barbershop/bs\ contact\ responsive.jpg);
+  background-image: url(../images/barbershop/bs\ contact\ responsive.jpg);
   color: white;
 }
 
 .bgimg-9 {
-  background-image: url(/images/barbershop/bs\ gallery.jpg);
+  background-image: url(../images/barbershop/bs\ gallery.jpg);
   color: white;
 }
 
 .bgimg-10 {
-  background-image: url(/images/nasa-page.jpg);
+  background-image: url(../images/nasa-page.jpg);
   color: white;
 }
 
@@ -1159,7 +1159,7 @@ img {vertical-align: middle;}
     position: absolute;
     bottom: 22.7%;
     right: 1.1%; 
-    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background: url(../wallpaper2you_259466.jpg) no-repeat;
     background-size: cover;
     overflow: hidden;  
     opacity: .7;
@@ -1174,7 +1174,7 @@ img {vertical-align: middle;}
     position: absolute;
     bottom: 23%;
     right: .99%; 
-    background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
+    background: url(../da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
     background-size: cover;
     opacity: .7;
     
@@ -1201,7 +1201,7 @@ img {vertical-align: middle;}
     position: absolute;
     bottom: 24.1%;
     right: 1.025%;
-    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background: url(../wallpaper2you_259466.jpg) no-repeat;
     background-size: cover;
     overflow: hidden;      
     border-radius: 5px 6px 5px 6px;
@@ -1217,7 +1217,7 @@ img {vertical-align: middle;}
     border-radius: 3px 5px 5px 5px;
     bottom: 23.6%;
     right: 1.025%;
-    background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
+    background: url(../da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
     background-size: cover;
     opacity: .7;
     
@@ -1291,7 +1291,7 @@ img {vertical-align: middle;}
     height: 40%;
     top: 1%;
     left: 40%;
-    background: url(/images/hang-in-there.jpg) no-repeat;
+    background: url(../images/hang-in-there.jpg) no-repeat;
     background-size: contain;
     opacity: .5;
     z-index: -1;
@@ -1305,7 +1305,7 @@ img {vertical-align: middle;}
     height: 35%;
     top: 1%;
     left: 44%;
-    background: url(/images/hang-in-there.jpg) no-repeat;
+    background: url(../images/hang-in-there.jpg) no-repeat;
     background-size: contain;
     opacity: .5;
     z-index: -1;
@@ -1354,7 +1354,7 @@ img {vertical-align: middle;}
     position: absolute;
     bottom: 28.5%;
     right: 4%;  
-    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background: url(../wallpaper2you_259466.jpg) no-repeat;
     background-size: cover;
     opacity: .6;
   }
@@ -2152,7 +2152,7 @@ img {vertical-align: middle;}
     position: absolute;
     bottom: 28.5%;
     right: 3%;  
-    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background: url(../wallpaper2you_259466.jpg) no-repeat;
     background-size: cover;
     opacity: .6;
   } 
@@ -2919,7 +2919,7 @@ img {vertical-align: middle;}
     position: absolute;
     bottom: 28.5%;
     right: 3%;  
-    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background: url(../wallpaper2you_259466.jpg) no-repeat;
     background-size: cover;
     opacity: .6;
   }  
@@ -2934,7 +2934,7 @@ img {vertical-align: middle;}
     position: absolute;
     bottom: 28.5%;
     right: 12%;  
-    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background: url(../wallpaper2you_259466.jpg) no-repeat;
     background-size: cover;
     opacity: .6;
   }
@@ -2967,7 +2967,7 @@ img {vertical-align: middle;}
     position: absolute;
     bottom: 28.5%;
     right: 5.5%;  
-    background: url(/wallpaper2you_259466.jpg) no-repeat;
+    background: url(../wallpaper2you_259466.jpg) no-repeat;
     background-size: cover;
     opacity: .6;
   }
@@ -2996,7 +2996,7 @@ img {vertical-align: middle;}
     position: absolute;
     bottom: 26.8%;
     right: 1.2%;  
-    background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
+    background: url(../da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
     background-size: cover;
     opacity: .6;
   }
@@ -3011,7 +3011,7 @@ img {vertical-align: middle;}
       position: absolute;
       bottom: 27.5%;
       right: 1.2%;  
-      background: url(/da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
+      background: url(../da7896d6abe683cec8eae4da1cec5fa8.jpg) no-repeat;
       background-size: cover;
       opacity: .6;
     }
